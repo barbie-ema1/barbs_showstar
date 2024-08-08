@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+
+:root {
+    --white: hsl(36, 100%, 99%);
+    --Grayishblue: hsl(233, 8%, 79%);
+    --Darkgrayishblue: hsl(236, 13%, 42%);
+    --Verydarkblue: hsl(240, 100%, 5%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--white);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+/*styling the navigation bar*/
+.mainhead{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: fit-content;
+    margin-top: 1.2pc;
+    margin-left: 8pc;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    border-top: 0.5pc solid #f8f9fa;
+    border-bottom: 0.5pc solid #F5F7F8;
+    
+    
+}
+
+
+.nav-logo{
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 2pc;
+    color: #433D8B;
+}
+
+
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+    margin-left: 2pc;
+    margin-top: 1.2pc;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.nav-left a:hover{
+    color: #433D8B;
+
+}
+
+
+.starlogo{
+    height: 1.2pc;
+    width: 1.5pc;
+    
+    
+}
+
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 3px 3px;
+    margin: 4px 4px;
+    margin-top: 1pc;
+    margin-left: 3pc;
+    
+}
+
+.nav-left a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: (var(--Verydarkblue));
+}
+
+.size{
+    height: 1.5pc;
+    width: 1.5pc;
+}
+
+.nav-right a:hover{
+   cursor: pointer;
+   
+
+}
+
+/* styling the first section carousel of the landing page*/
+
+.section-one{
+    margin-top: 2pc;
+    margin-left: 8pc;
+}
+
+.carousel { 
+    position: relative; 
+    width: 88%; 
+    height: 500px; 
+    overflow: hidden; 
+    background-color: #f8f9fa; 
+}
+
+.carousel-item h2{
+    font-size: 34px;
+    line-height: 5pc;
+    letter-spacing: 2px;
+    color: #433D8B;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    inline-size: 4pc;
+    margin-top: 2pc;
+}
+  
+.carousel-item .slide-image { 
+    width: 88%; 
+    height: 500px; 
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin-left: 5pc;
+} 
+  
+.carousel-item { 
+    position: absolute; 
+    width: 100%; 
+    height: 270px; 
+    border: none; 
+    top: 0; 
+    left: 100%; 
+} 
+  
+.carousel-item.active { 
+    left: 0; 
+    transition: all 0.95s ease-out; 
+} 
+  
+.carousel-item div { 
+    height: 100%; 
+} 
+
+
+/*styling the featured product page*/
+.feature{
+    margin-top: 2pc;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.feature h2{
+    margin-top: 2pc;
+    margin-left:35pc;
+    margin-bottom: 2pc;
+
+}
+
+.featured-p{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10pc;
+    width: 90%;
+    
+}
+
+.featured-row{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 90%;
+    justify-content: space-between;
+    margin-bottom: 2pc;
+}
+
+.featuredpic{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.featuredpic h4{
+    width: 50%;
+    margin-top: 1pc;
+}
+
+.featuredpic h5{
+    color: #DC5F00;
+}
+
+.featuredpic img{
+    height: 80%;
+    width: 80%;
+
+}
+
+
+.feature-text{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.ftext{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.feature-like{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin-left: -1pc;
+    margin-top: 1.2pc;
+}
+
+
+.sales{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 10pc;
+    margin-top: 2pc;
+}
+
+.salesbox{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin-bottom: 4pc;
+}
+
+.salesbox h4{
+    margin-top: -1pc;
+    font-size: 400;
+    font-size: 20px;
+    margin-left: 2.5pc;
+    color: #dc3e00;
+}
+
+.salesbox1{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-around;
+    box-shadow: 8px 5px 8px 5px #9d9da1 ;
+}
+
+.salesbox1 img{
+    width: 80%;
+    height: 70%;
+    margin-left: 3pc;
+}
+
+.salesbox2{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 4pc;
+    justify-content: space-around;
+    box-shadow: 8px 5px 8px 5px #9d9da1 ;
+}
+
+.salesbox2 img{
+    width: 80%;
+    height: 70%;
+    margin-left: 3pc;
+}
+
+
+button{
+    background-color: black;
+    color: #F5F7F8;
+    border-radius: 2px;
+    width: 40%;
+    height: 80%;
+    margin: 1.5pc;
+    margin-top: -0.5pc;
+    margin-left: 9pc;
+    border: none;
+    
+}
+
+button:hover{
+    background-color: #7e7d7c;
+}
+
+button a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #F5F7F8;
+    font-weight: 500;
+}
+
+/*styling the news letter subscribe section of the page*/
+
+.news{
+    background-color: #686D76;
+    margin: 0.2pc 0.2pc;
+    width: 100%;
+    margin-left: 2pc;
+}
+
+.newsletter{
+    width: 90%;
+    margin-left: 10pc;
+    display: flex;
+    flex-direction: row;
+    
+}
+.leftbox{
+    width: 20%;
+    margin-top: 2pc;
+
+}
+
+.rightbox{
+    margin-top: 1pc;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rightbox h3{
+    margin-bottom: 1pc;
+    color: #F5F7F8;
+}
+
+.rightbox h5{
+    color: #F5F7F8;
+}
+
+.rightbox input{
+    margin-top: 2pc;
+    width: 40%;
+    height: 10%;
+    margin: 1pc 1pc;
+    padding: 1pc 1pc;
+    margin-left: 0.1pc;
+}
+.btn{
+    margin-top: 0.5pc;
+    margin-left: 0.1pc;
+    width: 30%;
+    padding: 0.1pc 0.1pc;
+}
+
+/*styling the footer section of the page*/
+.foot{
+    background-color: #373A40;
+    height: fit-content;
+    width: 100%;
+    margin-top: -0.3pc;
+    margin-left: 2pc;
+    
+    
+}
+
+.footbox{
+    margin-left: 3pc;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.foot1,.foot2,.foot3{
+    margin-top: 2pc;
+    margin-left: 4pc;
+    margin-bottom: 3pc;
+}
+
+.foot1{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    line-height: 1.6pc;
+    color: #240A34;
+}
+
+.foot1 h4:hover{
+    color:#F5F7F8
+}
+
+.foot2{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    
+}
+
+.foot2 a{
+    text-decoration: none;
+    color: #240A34;
+}
+
+.foot3{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+}
+
+.foot3 a{
+    text-decoration: none;
+    color: #240A34;
+}
+
+.foot2,.foot3{
+    line-height: 2pc;
+    
+}
+.foot2 a:hover{
+    
+    color: #F5F7F8;
+}
+
+.foot3 a:hover{
+    color: #F5F7F8;
+}

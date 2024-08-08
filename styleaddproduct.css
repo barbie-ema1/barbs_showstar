@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Courgette&family=Signika:wght@300..700&display=swap');
+
+
+
+/*styling the body of the form*/
+
+.add-product {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 3pc;
+    margin-top: 3pc;
+    margin-bottom: 3pc;
+    box-shadow: 3px 3px 3px 3px #d5d5d8 ;
+    border-radius: 5px;
+}
+
+.product-form form{
+    margin-top: 2pc;
+    margin-left: 3pc;
+    margin-bottom: 3pc;
+    line-height: 3pc;
+}
+
+.product-form form input{
+    width: 30%;
+    height: 20%;
+    color: #3a3a3a;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    border-radius: 3px;
+    border-color: #433D8B;
+}
+
+select{
+    background-color: #433D8B;
+    color: #fff;
+    height: 30%;
+    padding: 3px 3px;
+    margin: 3px 3px;
+    border-radius: 3px;
+    
+}
+

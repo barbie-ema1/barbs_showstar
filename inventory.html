@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleadmin.css">
+    <link rel="stylesheet" href="styleinvent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+    
+
+    <title>Inventory| AdminPage</title>
+</head>
+<body>
+
+    <div class="bodybox">
+        <!--the side navigation bar-->
+        <div class="sidebar">
+
+            <div class="sidebar-logo">
+                <div class="side-logo">
+                <img src="./images/footprint.svg" alt="">
+                <h3>Barbs Show St<img src="./images/star_logo.png" alt="" class="starlogo">r</h3>
+                </div>
+                <div class="side-text">
+                <h3>Hello Admin!</h3>
+                </div>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="M264-216h96v-240h240v240h96v-348L480-726 264-564v348Zm-72 72v-456l288-216 288 216v456H528v-240h-96v240H192Zm288-327Z"/></svg>
+                        <a href="admindashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="m692-156 130-135-35-33-96.29 99L652-264l-34 34 74 74ZM288-576h384v-72H288v72ZM719.77-48Q640-48 584-104.23q-56-56.22-56-136Q528-320 584.23-376q56.22-56 136-56Q800-432 856-375.77q56 56.22 56 136Q912-160 855.77-104q-56.22 56-136 56ZM144-96v-648q0-29.7 21.15-50.85Q186.3-816 216-816h528q29.7 0 50.85 21.15Q816-773.7 816-744v259q-17-7-35.03-11-18.04-4-36.97-6v-242H216v528h240q3 30 12.12 58T492-105l-12 9-56-45-56 45-56-45-56 45-56-45-56 45Zm144-216h177q5-20 13.5-37.5T498-384H288v72Zm0-132h264q26-21 56-35t64-20v-17H288v72Zm-72 228v-528 528Z"/></svg>
+                        <a href="productlist.html">Product List</a>
+                    </li>   
+                    <li class="active">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#433D8B"><path d="M616-192 447-362l51-51 118 119 221-221 51 51-272 272Zm200-384h-72v-168h-72v120H288v-120h-72v528h216v72H216q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h171q8-31 33.5-51.5T480-888q34 0 59.5 20.5T573-816h171q29.7 0 50.85 21.15Q816-773.7 816-744v168ZM479.79-744q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5Z"/></svg> 
+                        
+                        <a href="inventory.html">Inventory</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="M96 0v-192h768V0H96Zm501-506-91-91-145 145 91 90 145-144Zm-40-142 91 91 144-145-90-90-145 144Zm-75-26 192 192-171 171q-22 20-50.5 21.5T404-308l-20 20H192l116-116q-21-20-20-49.5t23-49.5l171-171Zm0 0 169-169q21-21 51-21t50.81 20.98L843-753q20 21.57 20 50.79Q863-673 843-651L674-482 482-674Z"/></svg>
+                        <a href="addproduct.html">Add Product</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="M216-96q-29.7 0-50.85-21.15Q144-138.3 144-168v-480q0-29.7 21.15-50.85Q186.3-720 216-720h72q0-79.68 56.23-135.84 56.22-56.16 136-56.16Q560-912 616-855.84q56 56.16 56 135.84h72q29.7 0 50.85 21.15Q816-677.7 816-648v480q0 29.7-21.15 50.85Q773.7-96 744-96H216Zm0-72h528v-480H216v480Zm264.23-216Q560-384 616-440.16q56-56.16 56-135.84h-72q0 50-35 85t-85 35q-50 0-85-35t-35-85h-72q0 80 56.23 136 56.22 56 136 56ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM216-168v-480 480Z"/></svg>
+                        <a href="orders.html">Orders</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!--the main body ssection of the page-->
+        <div class="mainbody">
+
+            <!--the navigation menu bar -->
+            <div class="navbar">
+
+                <div class="nav-left">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#433D8B"><path d="M616-192 447-362l51-51 118 119 221-221 51 51-272 272Zm200-384h-72v-168h-72v120H288v-120h-72v528h216v72H216q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h171q8-31 33.5-51.5T480-888q34 0 59.5 20.5T573-816h171q29.7 0 50.85 21.15Q816-773.7 816-744v168ZM479.79-744q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5Z"/></svg> 
+                        
+                    <h3>My Inventory</h3>   
+                </div>
+
+                <div class="nav-right">
+                    <div class="left-right-svg">
+                        <div class="dropdown">
+                            <button  class="dropbtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M192-216v-72h48v-240q0-87 53.5-153T432-763v-53q0-20 14-34t34-14q20 0 34 14t14 34v53q85 16 138.5 82T720-528v240h48v72H192Zm288-276Zm-.21 396Q450-96 429-117.15T408-168h144q0 30-21.21 51t-51 21ZM312-288h336v-240q0-70-49-119t-119-49q-70 0-119 49t-49 119v240Z"/></svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <div class="msg notifications">
+                                    <h3>Notifications</h3>
+                                    <div class="msg-col">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#8B1A10"><path d="M440-440h80v-200h-80v200Zm40 120q17 0 28.5-11.5T520-360q0-17-11.5-28.5T480-400q-17 0-28.5 11.5T440-360q0 17 11.5 28.5T480-320ZM160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+                                        <p>You are running out of stock on Product Item "Black Diamond Heel"</p>
+                                    </div>
+                                    <div class="msg-col">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1A5319"><path d="M440-440h80v-200h-80v200Zm40 120q17 0 28.5-11.5T520-360q0-17-11.5-28.5T480-400q-17 0-28.5 11.5T440-360q0 17 11.5 28.5T480-320ZM160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+                                        <p>Payment Recieved on Order Number #32456</p>
+                                    </div>
+                                    <div class="msg-col">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#EB5B00"><path d="M440-440h80v-200h-80v200Zm40 120q17 0 28.5-11.5T520-360q0-17-11.5-28.5T480-400q-17 0-28.5 11.5T440-360q0 17 11.5 28.5T480-320ZM160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+                                        <p>Order Number #452753 is still pending</p>
+                                    </div>
+                                
+
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button  class="dropbtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M240-384h336v-72H240v72Zm0-132h480v-72H240v72Zm0-132h480v-72H240v72ZM96-96v-696q0-29.7 21.15-50.85Q138.3-864 168-864h624q29.7 0 50.85 21.15Q864-821.7 864-792v480q0 29.7-21.15 50.85Q821.7-240 792-240H240L96-96Zm114-216h582v-480H168v522l42-42Zm-42 0v-480 480Z"/></svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <div class="msg">
+                                    <h3>Messages</h3>
+                                    <div class="msg-col">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#EA3323"><path d="M214-384q0 46 19.5 87.5T288-223q-1-5-1.5-10t-.5-10q0-27 10-50.5t27-42.5l107-120 107 120q17 20 27 43.5t10 49.5q0 5-.5 10.5T572-222q35-29 54.5-71.5T646-384q0-51-17.5-100.5T578-576q-17 11-35.5 17t-40.5 6q-52 0-91.5-32T361-668q-36 33-63 67.5T252-530q-19 36-28.5 73t-9.5 73Zm216 36-53 60q-9 11-14 22.5t-5 25.5q0 30 21 51t51 21q30 0 51-21t21-51q0-14-5-26t-14-22l-53-60Zm0-468v119q0 30 21 51t51 21q17 0 31.5-7t24.5-20l16-20q64 38 104 118.5T718-384q0 120-84 204T430-96q-120 0-204-84t-84-204q0-112 76-226.5T430-816Zm398 312q-15 0-25.5-10.5T792-540q0-15 10.5-25.5T828-576q15 0 25.5 10.5T864-540q0 15-10.5 25.5T828-504Zm-36-120v-192h72v192h-72Z"/></svg>
+                                        <p>Shiny Black Leather Shoe for men sold over 20pcs Today</p>
+                                    </div>
+                                    <div class="msg-col">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M360-240q-30 0-51-21t-21-51v-48h456v-312h48q30 0 51 21t21 51v504L720-240H360ZM96-288v-504q0-30 21-51t51-21h432q30 0 51 21t21 51v288q0 30-21 51t-51 21H240L96-288Zm504-216v-288H168v288h432Zm-432 0v-288 288Z"/></svg>
+                                        <p>Congratulations, your ratings improved by 20% from last week</p>
+                                    </div>
+                                    <div class="msg-col">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M360-240q-30 0-51-21t-21-51v-48h456v-312h48q30 0 51 21t21 51v504L720-240H360ZM96-288v-504q0-30 21-51t51-21h432q30 0 51 21t21 51v288q0 30-21 51t-51 21H240L96-288Zm504-216v-288H168v288h432Zm-432 0v-288 288Z"/></svg>
+                                        <p>Buy one get one free sales is almost over</p>
+                                    </div>
+                                
+
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin-icon">
+                        <div class="dropdown">
+                            <button class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M384-480q-60 0-102-42t-42-102q0-60 42-102t102-42q60 0 102 42t42 102q0 60-42 102t-102 42ZM96-192v-92q0-26 12.5-47.5T143-366q55-32 116-49t125-17q11 0 20.5.5T425-430q-7 17-10.5 35t-5.5 36l-25-1q-54 0-106 14t-99 42q-4.95 2.94-7.98 8.24Q168-290.47 168-284v20h251q4.85 18.63 12.92 36.81Q440-209 451-192H96Zm543 48-12-56q-14-5-26.5-12T577-228l-55 17-32-55 41-40q-4-14-3.5-29t3.5-29l-41-39 32-56 54 16q11-10 24-17.5t27-11.5l13-56h64l13 56q14 5 27 12t24 17l54-15 32 55-40 38q2 15 2 30.05 0 15.06-3 28.95l41 39-32 55-55-16q-11 9-23.5 16.5T717-200l-14 56h-64Zm33.21-120Q702-264 723-285.21t21-51Q744-366 722.79-387t-51-21Q642-408 621-386.79t-21 51Q600-306 621.21-285t51 21Zm-288-288Q414-552 435-573.21t21-51Q456-654 434.79-675t-51-21Q354-696 333-674.79t-21 51Q312-594 333.21-573t51 21Zm-.21-72Zm35 360Z"/></svg>
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="#">Settings 
+                                <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="m403-96-22-114q-23-9-44.5-21T296-259l-110 37-77-133 87-76q-2-12-3-24t-1-25q0-13 1-25t3-24l-87-76 77-133 110 37q19-16 40.5-28t44.5-21l22-114h154l22 114q23 9 44.5 21t40.5 28l110-37 77 133-87 76q2 12 3 24t1 25q0 13-1 25t-3 24l87 76-77 133-110-37q-19 16-40.5 28T579-210L557-96H403Zm59-72h36l19-99q38-7 71-26t57-48l96 32 18-30-76-67q6-17 9.5-35.5T696-480q0-20-3.5-38.5T683-554l76-67-18-30-96 32q-24-29-57-48t-71-26l-19-99h-36l-19 99q-38 7-71 26t-57 48l-96-32-18 30 76 67q-6 17-9.5 35.5T264-480q0 20 3.5 38.5T277-406l-76 67 18 30 96-32q24 29 57 48t71 26l19 99Zm18-168q60 0 102-42t42-102q0-60-42-102t-102-42q-60 0-102 42t-42 102q0 60 42 102t102 42Zm0-144Z"/></svg>
+                              </a>
+                              <a href="#">Log Out
+                              <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#B43F3F"><path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h264v72H216Zm432-168-51-51 81-81H384v-72h294l-81-81 51-51 168 168-168 168Z"/></svg>
+                              </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <!--body of the dashboard-->
+            <div class="dashboard">
+
+                <div class="invent">
+                    <!--the first section of the inventory-->
+                    <div class="inventbox1">
+
+
+                        <div class="invent1">
+                            
+                            <div class="invent-a">
+                                <svg fill="#433D8B" width="60px" height="60px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <title>moneybag</title>
+                                    <path d="M14.017 9.302h3.934v-1.476h-3.934v1.476zM17.922 9.793h-3.905c0 0-6.425 6.333-6.425 12.542 0 6.579 6.732 7.102 6.732 7.102s2.008 0.333 3.257 0c0 0 6.826-0.8 6.826-7.070 0.001-6.272-6.485-12.574-6.485-12.574zM18.211 23.123c-0.158 0.32-0.371 0.588-0.643 0.802-0.271 0.215-0.588 0.376-0.949 0.484-0.046 0.014-0.096 0.019-0.143 0.031v1.092h-0.983v-0.964c-0.012 0.001-0.024 0.003-0.036 0.003-0.279 0-0.538-0.022-0.778-0.067s-0.45-0.101-0.634-0.164c-0.184-0.064-0.337-0.131-0.459-0.201s-0.212-0.132-0.266-0.186c-0.055-0.054-0.093-0.132-0.116-0.234-0.022-0.103-0.034-0.249-0.034-0.441 0-0.129 0.004-0.237 0.013-0.325s0.021-0.158 0.041-0.213c0.019-0.055 0.043-0.093 0.074-0.116 0.031-0.022 0.068-0.034 0.109-0.034 0.059 0 0.141 0.034 0.247 0.103s0.242 0.145 0.409 0.228c0.167 0.084 0.365 0.159 0.597 0.229 0.231 0.068 0.499 0.103 0.803 0.103 0.2 0 0.379-0.024 0.537-0.072s0.293-0.115 0.403-0.203c0.111-0.088 0.195-0.196 0.253-0.325 0.059-0.13 0.088-0.273 0.088-0.433 0-0.183-0.051-0.34-0.15-0.472-0.1-0.131-0.231-0.247-0.391-0.35-0.16-0.102-0.342-0.197-0.546-0.287s-0.415-0.185-0.631-0.284c-0.217-0.1-0.427-0.213-0.631-0.341-0.204-0.127-0.387-0.278-0.547-0.455s-0.29-0.387-0.391-0.628c-0.1-0.241-0.149-0.531-0.149-0.868 0-0.388 0.072-0.728 0.215-1.021s0.338-0.537 0.581-0.73c0.244-0.193 0.531-0.338 0.862-0.434 0.17-0.049 0.346-0.085 0.526-0.108v-1.035h0.983v1.034c0.040 0.005 0.079 0.003 0.118 0.009 0.191 0.029 0.371 0.068 0.537 0.118s0.314 0.105 0.443 0.167 0.215 0.113 0.256 0.155c0.043 0.041 0.070 0.076 0.086 0.105 0.014 0.029 0.025 0.068 0.037 0.116 0.010 0.048 0.018 0.108 0.021 0.182 0.004 0.072 0.006 0.163 0.006 0.271 0 0.121-0.004 0.224-0.010 0.308-0.006 0.083-0.016 0.152-0.031 0.206-0.014 0.055-0.035 0.094-0.062 0.119s-0.062 0.037-0.109 0.037c-0.045 0-0.119-0.028-0.219-0.086-0.1-0.059-0.223-0.121-0.367-0.189-0.146-0.068-0.314-0.13-0.506-0.187-0.193-0.056-0.403-0.083-0.631-0.083-0.18 0-0.336 0.021-0.469 0.065-0.134 0.043-0.245 0.104-0.335 0.18-0.089 0.077-0.156 0.17-0.199 0.277-0.044 0.107-0.065 0.222-0.065 0.342 0 0.18 0.049 0.335 0.146 0.466s0.229 0.248 0.394 0.35c0.164 0.103 0.351 0.198 0.56 0.287 0.208 0.090 0.42 0.185 0.637 0.284 0.217 0.101 0.428 0.214 0.637 0.341s0.395 0.279 0.557 0.456 0.293 0.385 0.393 0.624c0.1 0.24 0.15 0.521 0.15 0.847-0.001 0.422-0.081 0.794-0.239 1.115zM17.891 7.334l1.998-4.919c0 0-1.26 1.046-1.998 1.046s-1.907-1.015-1.907-1.015-1.26 1.015-1.998 1.015c-0.737 0-1.937-0.984-1.937-0.984l2.029 4.857h3.813z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="invent-b">
+                                <h3>Total Sales </h3>
+                                <h3>$42,400</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="invent2">
+
+                            <div class="invent-a">
+                                <svg fill="#FF7F3E" width="60px" height="60px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M37,31.6H57.4a1.84,1.84,0,0,0,1.9-1.9V25.9a5.66,5.66,0,0,0-5.5-5.7h-13a5.59,5.59,0,0,0-5.5,5.7v3.8A1.74,1.74,0,0,0,37,31.6Z"/><path d="M67.3,54.5A12.7,12.7,0,1,0,80,67.2,12.72,12.72,0,0,0,67.3,54.5Zm8.2,9.2L66.2,73a1.94,1.94,0,0,1-2.6,0L59,68.4a.85.85,0,0,1,0-1.3l1.3-1.3a.85.85,0,0,1,1.3,0L64.8,69l8.1-8.1a.85.85,0,0,1,1.3,0l1.3,1.3C76.2,62.8,75.7,63.4,75.5,63.7Z"/><path d="M59.8,52.3h0a3.91,3.91,0,0,1-2.7-3.8H37.3a4,4,0,0,1-4,4V61a4,4,0,0,1,4,4H50.9A16.74,16.74,0,0,1,59.8,52.3ZM47.2,61.9a5.4,5.4,0,1,1,5.4-5.4A5.38,5.38,0,0,1,47.2,61.9Z"/><path d="M67.6,25H65.7a.84.84,0,0,0-.9.9v3.8a7.56,7.56,0,0,1-7.4,7.6H37a7.49,7.49,0,0,1-7.4-7.6V25.9a.84.84,0,0,0-.9-.9H26.8a5.59,5.59,0,0,0-5.5,5.7V71.3A5.66,5.66,0,0,0,26.8,77H54a17,17,0,0,1-3.1-7.7H32.6a3.37,3.37,0,0,1-3.4-3.4V47.8a3.37,3.37,0,0,1,3.4-3.4H62a3.37,3.37,0,0,1,3.4,3.4v2.9h0a13.4,13.4,0,0,1,2-.1,15.75,15.75,0,0,1,5.8,1.1v-21A5.74,5.74,0,0,0,67.6,25Z"/></svg>
+                            </div>
+
+                            <div class="invent-b">
+                                <h3>Total Expenses </h3>
+                                <h3>$12,650</h3>
+                            </div>
+                        </div>
+
+
+                        <div class="invent3">
+                            <div class="invent-a">
+                                <svg width="60px" height="60px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M14 2a8 8 0 0 1 3.292 15.293A8 8 0 1 1 6.706 6.707 8.003 8.003 0 0 1 14 2zm-3 7H9v1a2.5 2.5 0 0 0-.164 4.995L9 15h2l.09.008a.5.5 0 0 1 0 .984L11 16H7v2h2v1h2v-1a2.5 2.5 0 0 0 .164-4.995L11 13H9l-.09-.008a.5.5 0 0 1 0-.984L9 12h4v-2h-2V9zm3-5a5.985 5.985 0 0 0-4.484 2.013 8 8 0 0 1 8.47 8.471A6 6 0 0 0 14 4z"/>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="invent-b">
+                                <h3>Gross Profit </h3>
+                                <h3>$66,450</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="inventbox1">
+
+
+                        <div class="invent1">
+                            
+                            <div class="invent-a">
+                                <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                        width="60px" height="60px" viewBox="0 0 425.832 425.833"
+                                        xml:space="preserve">
+                                    <g>
+                                        <path d="M377.763,83.169l-86.238-80.33c-1.957-1.83-4.54-2.839-7.21-2.839H55.291c-5.855,0-10.597,4.742-10.597,10.59v404.647
+                                            c0,5.843,4.742,10.595,10.597,10.595H370.54c5.854,0,10.599-4.74,10.599-10.595V90.92
+                                            C381.134,87.979,379.915,85.172,377.763,83.169z M108.599,388.26c0-8.273,6.735-15.011,15.018-15.011
+                                            c8.282,0,15.012,6.737,15.012,15.011c0,8.284-6.73,15.016-15.012,15.016C115.334,403.276,108.599,396.544,108.599,388.26z
+                                            M185.611,388.26c0-8.273,6.736-15.011,15.019-15.011c8.275,0,15.003,6.737,15.003,15.011c0,8.284-6.728,15.016-15.003,15.016
+                                            C192.347,403.276,185.611,396.544,185.611,388.26z M360.118,404.654l-135.527-0.131c3.152-4.641,5.007-10.238,5.007-16.258
+                                            c0-15.983-12.993-28.974-28.968-28.974c-15.981,0-28.983,12.99-28.983,28.974c0,6.003,1.839,11.574,4.972,16.214l-28.979-0.031
+                                            c3.126-4.618,4.952-10.191,4.952-16.183c0-15.983-12.994-28.974-28.975-28.974c-15.98,0-28.98,12.99-28.98,28.974
+                                            c0,5.971,1.814,11.519,4.925,16.132l-33.844-0.033l0.252-134.205L87.207,355.1h144.215l69.822-160.598h21.06
+                                            c5.79,0,10.476-4.69,10.476-10.473c0-5.782-4.686-10.471-10.476-10.471h-34.79l-69.828,160.589h-114.13l-17.453-69.821h108.77
+                                            c5.79,0,10.473-4.691,10.473-10.468c0-5.791-4.684-10.486-10.473-10.486H66.021l0.005-3.951V21.17h197.629v79.471
+                                            c0,5.844,4.738,10.585,10.583,10.585h85.88V404.654z"/>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="invent-b">
+                                <h3>Total Orders </h3>
+                                <h3>60,400</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="invent2">
+
+                            <div class="invent-a">
+                                <svg width="60px" height="60px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+                                    
+                                    <style>.cls-1{fill:#77acf1;}.cls-2{fill:#04009a;}</style>
+                                    
+                                    </defs>
+                                    
+                                    <g data-name="14. Delivery Truck" id="_14._Delivery_Truck">
+                                    
+                                    <path class="cls-1" d="M7,5h6a0,0,0,0,1,0,0V8.88A1.12,1.12,0,0,1,11.88,10H8.12A1.12,1.12,0,0,1,7,8.88V5A0,0,0,0,1,7,5Z"/>
+                                    
+                                    <path class="cls-2" d="M31.41,17l-1.54-1.54-1.69-5.09A2,2,0,0,0,26.28,9H20V7a3,3,0,0,0-3-3H3A3,3,0,0,0,0,7V22a3,3,0,0,0,3,3H4.14a4,4,0,1,0,0-2H3a1,1,0,0,1-1-1V7A1,1,0,0,1,3,6H17a1,1,0,0,1,1,1V23H15a1,1,0,0,0,0,2h6.14a4,4,0,0,0,7.72,0H30a2,2,0,0,0,2-2V18.41A2,2,0,0,0,31.41,17ZM8,22a2,2,0,1,1-2,2A2,2,0,0,1,8,22Zm19.61-7H24V11h2.28ZM25,26a2,2,0,1,1,2-2A2,2,0,0,1,25,26Zm5-3H28.86a4,4,0,0,0-7.72,0H20V11h2v5a1,1,0,0,0,1,1h5.59L30,18.41Z"/>
+                                    
+                                    </g>
+                                    
+                                </svg>
+                            </div>
+
+                            <div class="invent-b">
+                                <h3>Total Delivered </h3>
+                                <h3>32,650</h3>
+                            </div>
+                        </div>
+
+
+                        <div class="invent3">
+                            <div class="invent-a">
+                                <svg width="60px" height="60px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                    <title/>
+                                    
+                                    <g fill="none" fill-rule="evenodd" id="页面-1" stroke="none" stroke-width="1">
+                                    
+                                    <g id="导航图标" transform="translate(-325.000000, -80.000000)">
+                                    
+                                    <g id="编组" transform="translate(325.000000, 80.000000)">
+                                    
+                                    <polygon fill="#FFFFFF" fill-opacity="0.01" fill-rule="nonzero" id="路径" points="24 0 0 0 0 24 24 24"/>
+                                    
+                                    <polygon id="路径" points="22 7 12 2 2 7 2 17 12 22 22 17" stroke="#212121" stroke-linejoin="round" stroke-width="1.5"/>
+                                    
+                                    <line id="路径" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" x1="2" x2="12" y1="7" y2="12"/>
+                                    
+                                    <line id="路径" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" x1="12" x2="12" y1="22" y2="12"/>
+                                    
+                                    <line id="路径" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" x1="22" x2="12" y1="7" y2="12"/>
+                                    
+                                    <line id="路径" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" x1="17" x2="7" y1="4.5" y2="9.5"/>
+                                    
+                                    </g>
+                                    
+                                    </g>
+                                    
+                                    </g>
+                                    
+                                </svg>
+                            </div>
+
+                            <div class="invent-b">
+                                <h3>Total Stock </h3>
+                                <h3>45,000</h3>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <!--styling the second section-->
+
+                    <div class="invent-two">
+
+                        <div class="invent-chart">
+
+                            <canvas id="myChart3" style="width:90%;max-width:600px;height:50vh;margin-top: 2pc;"></canvas>
+                        </div>
+
+
+                        <div class="best-seller">
+                            <h2>Best Sellers <small style="font-size: 14px;">(July's Top 5)</small></h2>
+                            <table style="width: 100%;">
+
+                                <tr>
+                                    <th>SL</th>
+                                    <th>Name</th>
+                                    <th>Quantity</th>
+                                    <th>Rating</th>
+                                </tr>
+
+                                <tr>
+                                    <th>01</th>
+                                    <th>Black Studed Diamond Heel</th>
+                                    <th>5,120</th>
+                                    <th style="color: #ddd;font-size: 20px;"><b style="color: gold;">*****</b></th>
+                                </tr>
+
+                                <tr>
+                                    <th>02</th>
+                                    <th>Black Crossed Heel</th>
+                                    <th>4,750</th>
+                                    <th style="color: #ddd;font-size: 20px;"><b style="color: gold;">*****</b></th>
+                                </tr>
+
+                                <tr>
+                                    <th>03</th>
+                                    <th>Black Shiny Leather Shoe</th>
+                                    <th>3,200</th>
+                                    <th style="color: #ddd;font-size: 20px;"><b style="color: gold;">****</b>*</th>
+                                </tr>
+
+                                <tr>
+                                    <th>04</th>
+                                    <th>Glossy Flat</th>
+                                    <th>2,800</th>
+                                    <th style="color: #ddd;font-size: 20px;"><b style="color: gold;">***</b>**</th>
+                                </tr>
+
+                                <tr>
+                                    <th>05</th>
+                                    <th>Mid Night Black</th>
+                                    <th>2,500</th>
+                                    <th style="color: #ddd;font-size: 20px;"><b style="color: gold;">***</b>**</th>
+                                </tr>
+
+                            </table>
+                        </div>
+
+
+                    </div>
+
+                     <!--styling the third section showing sales and product stock-->
+
+                    <div class="sales-section">
+
+                        <div class="sales-box">
+                            <h3>Sales</h3>
+                            <table style="width: 100%;">
+
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Product Name</th>
+                                    <th>Order No.</th>
+                                    <th>Quantity</th>
+                                    <th>Amount</th>
+                                    <th>Payment Status</th>
+                                    <th>Delivery Status</th>
+                                    
+                                </tr>
+
+                                <tr>
+                                    <td>31/07/2024</td>
+                                    <td>Black Diamond Studed Heel</td>
+                                    <td>#bss862</td>
+                                    <td>2pc</td>
+                                    <td>$170</td>
+                                    <td style="color: #1A5319;">Paid</td>
+                                    <td style="color: #1A5319;">Delivered</td>
+                                    
+                                </tr>
+
+                                <tr>
+                                    <td>31/07/2024</td>
+                                    <td>Black Glossy Flat</td>
+                                    <td>#bss932</td>
+                                    <td>1pc</td>
+                                    <td>$45</td>
+                                    <td style="color: #1A5319;">Paid</td>
+                                    <td style="color: #04009a">Pending</td>
+                                    
+                                </tr>
+
+                                <tr>
+                                    <td>31/07/2024</td>
+                                    <td>Brown Leather</td>
+                                    <td>#bss246</td>
+                                    <td>2pc</td>
+                                    <td>$145</td>
+                                    <td style="color: #1A5319;">Paid</td>
+                                    <td style="color: #1A5319;">Delivered</td>
+                                </tr>
+
+
+
+                            </table>
+
+                        </div>
+
+
+                        <div class="product-box">
+                            <h3>Products</h3>
+                            <table style="width: 100%;">
+
+                                <tr>
+            
+                                    <th>Product Name</th>
+                                    <th>Product ID</th>
+                                    <th>Product Image</th>
+                                    <th>Quantity</th>
+                                    <th>Variation</th>
+                                    <th>Product Status</th>
+                                    
+                                </tr>
+
+                                <tr>
+
+                                    <td>Black Diamond Studed heel</td>
+                                    <td>#pp2345</td>
+                                    <td><img src="./images/women4black.jpg" alt=""></td>
+                                    <td>4638pc</td>
+                                    <td>Black, <br> Red</td>
+                                    <td style="color: #1A5319;">In Stock</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Black Glossy Flats</td>
+                                    <td>#pp3465</td>
+                                    <td><img src="./images/women4white.jpg" alt=""></td>
+                                    <td>2038pc</td>
+                                    <td>Black and White</td>
+                                    <td style="color:#FF7F3E">Running Low in Stock</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Midnight Black Flats</td>
+                                    <td>#pp3465</td>
+                                    <td><img src="./images/menblack1.jpg" alt=""></td>
+                                    <td>0pc</td>
+                                    <td>Black</td>
+                                    <td style="color: rgb(117, 4, 4);">Out of Stock</td>
+
+                                </tr>
+
+
+
+                            </table>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            
+
+
+
+
+            </div>
+
+            <div class="foot">
+                <h5>Powered by Barbie,2024</h5>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="dash.js"></script>
+</body>
+</html>

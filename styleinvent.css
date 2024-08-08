@@ -1,0 +1,216 @@
+/*styling the inventory page*/
+
+/*styling the first section*/
+
+.invent{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 2pc;
+}
+
+.inventbox1{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    margin-left: 2pc;
+    margin-top: 1pc;
+}
+
+.invent1{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-around;
+    box-shadow: 2px 2px 2px 2px #d5d5d8 ;
+    border-radius: 5px;
+    color: #433D8B;
+
+}
+
+.invent2{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-around;
+    box-shadow: 2px 2px 2px 2px #d5d5d8 ;
+    border-radius: 5px;
+    color: #FF7F3E;
+    
+
+}
+
+.invent3{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-around;
+    box-shadow: 2px 2px 2px 2px #d5d5d8 ;
+    border-radius: 5px;
+    color: #1A5319; 
+}
+
+
+.invent-a{
+    display: flex;
+    margin-top: 1pc;
+    margin-bottom: 0.3pc;
+}
+
+.invent-b h3{
+    margin-top: 1pc;
+    margin-bottom: 0.3pc;
+
+}
+
+
+.invent-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2pc;
+    margin-top: 2pc;
+    width: 95%;
+    margin-bottom: 3pc;
+}
+
+.invent-chart{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.best-seller{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-top: 1pc;
+}
+
+.best-seller h2{
+    margin-bottom: 0.7pc;
+}
+
+.best-seller table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.best-seller tr,th{
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 1.2pc;
+    padding-top: 0.5pc;
+    border-top: 3px solid #ddd;
+    border-left: 3px solid #ddd;
+    border-right: 3px solid #ddd;
+}
+
+
+/*styling the third section*/
+
+.sales-section{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-left: 2pc;
+    margin-bottom: 3pc;
+    margin-top: 3pc;
+    border-top: 3px solid #d5d5d8;
+    justify-content: space-between;
+    border-radius: 3px;
+
+}
+
+
+.sales-box{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 45vh;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    box-shadow: 2px 2px 2px 2px #d5d5d8 ;
+    border-radius: 5px;
+    margin-top: 2pc;
+
+}
+
+.sales-box, h3{
+    margin-top: 1pc;
+    margin-bottom: 1pc;
+    margin-left: 1.2pc;
+}
+
+
+.sales-box table{
+    border-collapse: collapse;
+    margin-left: 0.5pc;
+
+}
+
+.sales-box td{
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 1.2pc;
+    padding-top: 0.5pc;
+    padding-left: 0.5pc;
+    padding-right: 0.5pc;
+    border-top: 3px solid #ddd;
+    border-left: 3px solid #ddd;
+    border-right: 3px solid #ddd;
+}
+
+.sales-box th{
+    padding-bottom: 1.2pc;
+    padding-top: 0.5pc;
+    padding-left: 0.5pc;
+    padding-right: 0.5pc;
+}
+
+
+
+.product-box{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 45vh;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    box-shadow: 2px 2px 2px 2px #d5d5d8 ;
+    border-radius: 5px;
+    margin-top: 1.2pc;
+}
+
+.product-box h3{
+    margin-top: 1pc;
+    margin-bottom: 1pc;
+}
+
+.product-box table{
+    border-collapse: collapse;
+    margin-left: 0.4pc;
+}
+
+.product-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.product-box td{
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 1.2pc;
+    padding-top: 0.5pc;
+    padding-left: 0.5pc;
+    padding-right: 0.5pc;
+    border-top: 3px solid #ddd;
+    border-left: 3px solid #ddd;
+    border-right: 3px solid #ddd;
+}
+
+.product-box th{
+    padding-bottom: 1.2pc;
+    padding-top: 0.5pc;
+    padding-left: 0.5pc;
+    padding-right: 0.5pc;
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleadmin.css">
+    <link rel="stylesheet" href="styleorder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+    
+
+    <title>Order| AdminPage</title>
+</head>
+<body>
+
+    <div class="bodybox">
+        <!--the side navigation bar-->
+        <div class="sidebar">
+
+            <div class="sidebar-logo">
+                <div class="side-logo">
+                <img src="./images/footprint.svg" alt="">
+                <h3>Barbs Show St<img src="./images/star_logo.png" alt="" class="starlogo">r</h3>
+                </div>
+                <div class="side-text">
+                <h3>Hello Admin!</h3>
+                </div>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="M264-216h96v-240h240v240h96v-348L480-726 264-564v348Zm-72 72v-456l288-216 288 216v456H528v-240h-96v240H192Zm288-327Z"/></svg>
+                        <a href="admindashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="m692-156 130-135-35-33-96.29 99L652-264l-34 34 74 74ZM288-576h384v-72H288v72ZM719.77-48Q640-48 584-104.23q-56-56.22-56-136Q528-320 584.23-376q56.22-56 136-56Q800-432 856-375.77q56 56.22 56 136Q912-160 855.77-104q-56.22 56-136 56ZM144-96v-648q0-29.7 21.15-50.85Q186.3-816 216-816h528q29.7 0 50.85 21.15Q816-773.7 816-744v259q-17-7-35.03-11-18.04-4-36.97-6v-242H216v528h240q3 30 12.12 58T492-105l-12 9-56-45-56 45-56-45-56 45-56-45-56 45Zm144-216h177q5-20 13.5-37.5T498-384H288v72Zm0-132h264q26-21 56-35t64-20v-17H288v72Zm-72 228v-528 528Z"/></svg>
+                        <a href="productlist.html">Product List</a>
+                    </li>   
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="M616-192 447-362l51-51 118 119 221-221 51 51-272 272Zm200-384h-72v-168h-72v120H288v-120h-72v528h216v72H216q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h171q8-31 33.5-51.5T480-888q34 0 59.5 20.5T573-816h171q29.7 0 50.85 21.15Q816-773.7 816-744v168ZM479.79-744q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5Z"/></svg> 
+                        
+                        <a href="inventory.html">Inventory</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="M96 0v-192h768V0H96Zm501-506-91-91-145 145 91 90 145-144Zm-40-142 91 91 144-145-90-90-145 144Zm-75-26 192 192-171 171q-22 20-50.5 21.5T404-308l-20 20H192l116-116q-21-20-20-49.5t23-49.5l171-171Zm0 0 169-169q21-21 51-21t50.81 20.98L843-753q20 21.57 20 50.79Q863-673 843-651L674-482 482-674Z"/></svg>
+                        <a href="addproduct.html">Add Product</a>
+                    </li>
+                    <li class="active">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#433D8B"><path d="M216-96q-29.7 0-50.85-21.15Q144-138.3 144-168v-480q0-29.7 21.15-50.85Q186.3-720 216-720h72q0-79.68 56.23-135.84 56.22-56.16 136-56.16Q560-912 616-855.84q56 56.16 56 135.84h72q29.7 0 50.85 21.15Q816-677.7 816-648v480q0 29.7-21.15 50.85Q773.7-96 744-96H216Zm0-72h528v-480H216v480Zm264.23-216Q560-384 616-440.16q56-56.16 56-135.84h-72q0 50-35 85t-85 35q-50 0-85-35t-35-85h-72q0 80 56.23 136 56.22 56 136 56ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM216-168v-480 480Z"/></svg>
+                        <a href="orders.html">Orders</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!--the main body ssection of the page-->
+        <div class="mainbody">
+
+            <!--the navigation menu bar -->
+            <div class="navbar">
+
+                <div class="nav-left">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#433D8B"><path d="M216-96q-29.7 0-50.85-21.15Q144-138.3 144-168v-480q0-29.7 21.15-50.85Q186.3-720 216-720h72q0-79.68 56.23-135.84 56.22-56.16 136-56.16Q560-912 616-855.84q56 56.16 56 135.84h72q29.7 0 50.85 21.15Q816-677.7 816-648v480q0 29.7-21.15 50.85Q773.7-96 744-96H216Zm0-72h528v-480H216v480Zm264.23-216Q560-384 616-440.16q56-56.16 56-135.84h-72q0 50-35 85t-85 35q-50 0-85-35t-35-85h-72q0 80 56.23 136 56.22 56 136 56ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM216-168v-480 480Z"/></svg>
+                    <h3>My Orders</h3>   
+                </div>
+
+                <div class="nav-right">
+                    <div class="left-right-svg">
+                        <div class="dropdown">
+                            <button  class="dropbtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M192-216v-72h48v-240q0-87 53.5-153T432-763v-53q0-20 14-34t34-14q20 0 34 14t14 34v53q85 16 138.5 82T720-528v240h48v72H192Zm288-276Zm-.21 396Q450-96 429-117.15T408-168h144q0 30-21.21 51t-51 21ZM312-288h336v-240q0-70-49-119t-119-49q-70 0-119 49t-49 119v240Z"/></svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <div class="msg notifications">
+                                    <h3>Notifications</h3>
+                                    <div class="msg-col">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#8B1A10"><path d="M440-440h80v-200h-80v200Zm40 120q17 0 28.5-11.5T520-360q0-17-11.5-28.5T480-400q-17 0-28.5 11.5T440-360q0 17 11.5 28.5T480-320ZM160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+                                        <p>You are running out of stock on Product Item "Black Diamond Heel"</p>
+                                    </div>
+                                    <div class="msg-col">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1A5319"><path d="M440-440h80v-200h-80v200Zm40 120q17 0 28.5-11.5T520-360q0-17-11.5-28.5T480-400q-17 0-28.5 11.5T440-360q0 17 11.5 28.5T480-320ZM160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+                                        <p>Payment Recieved on Order Number #32456</p>
+                                    </div>
+                                    <div class="msg-col">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#EB5B00"><path d="M440-440h80v-200h-80v200Zm40 120q17 0 28.5-11.5T520-360q0-17-11.5-28.5T480-400q-17 0-28.5 11.5T440-360q0 17 11.5 28.5T480-320ZM160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+                                        <p>Order Number #452753 is still pending</p>
+                                    </div>
+                                
+
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button  class="dropbtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M240-384h336v-72H240v72Zm0-132h480v-72H240v72Zm0-132h480v-72H240v72ZM96-96v-696q0-29.7 21.15-50.85Q138.3-864 168-864h624q29.7 0 50.85 21.15Q864-821.7 864-792v480q0 29.7-21.15 50.85Q821.7-240 792-240H240L96-96Zm114-216h582v-480H168v522l42-42Zm-42 0v-480 480Z"/></svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <div class="msg">
+                                    <h3>Messages</h3>
+                                    <div class="msg-col">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#EA3323"><path d="M214-384q0 46 19.5 87.5T288-223q-1-5-1.5-10t-.5-10q0-27 10-50.5t27-42.5l107-120 107 120q17 20 27 43.5t10 49.5q0 5-.5 10.5T572-222q35-29 54.5-71.5T646-384q0-51-17.5-100.5T578-576q-17 11-35.5 17t-40.5 6q-52 0-91.5-32T361-668q-36 33-63 67.5T252-530q-19 36-28.5 73t-9.5 73Zm216 36-53 60q-9 11-14 22.5t-5 25.5q0 30 21 51t51 21q30 0 51-21t21-51q0-14-5-26t-14-22l-53-60Zm0-468v119q0 30 21 51t51 21q17 0 31.5-7t24.5-20l16-20q64 38 104 118.5T718-384q0 120-84 204T430-96q-120 0-204-84t-84-204q0-112 76-226.5T430-816Zm398 312q-15 0-25.5-10.5T792-540q0-15 10.5-25.5T828-576q15 0 25.5 10.5T864-540q0 15-10.5 25.5T828-504Zm-36-120v-192h72v192h-72Z"/></svg>
+                                        <p>Shiny Black Leather Shoe for men sold over 20pcs Today</p>
+                                    </div>
+                                    <div class="msg-col">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M360-240q-30 0-51-21t-21-51v-48h456v-312h48q30 0 51 21t21 51v504L720-240H360ZM96-288v-504q0-30 21-51t51-21h432q30 0 51 21t21 51v288q0 30-21 51t-51 21H240L96-288Zm504-216v-288H168v288h432Zm-432 0v-288 288Z"/></svg>
+                                        <p>Congratulations, your ratings improved by 20% from last week</p>
+                                    </div>
+                                    <div class="msg-col">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M360-240q-30 0-51-21t-21-51v-48h456v-312h48q30 0 51 21t21 51v504L720-240H360ZM96-288v-504q0-30 21-51t51-21h432q30 0 51 21t21 51v288q0 30-21 51t-51 21H240L96-288Zm504-216v-288H168v288h432Zm-432 0v-288 288Z"/></svg>
+                                        <p>Buy one get one free sales is almost over</p>
+                                    </div>
+                                
+
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin-icon">
+                        <div class="dropdown">
+                            <button class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M384-480q-60 0-102-42t-42-102q0-60 42-102t102-42q60 0 102 42t42 102q0 60-42 102t-102 42ZM96-192v-92q0-26 12.5-47.5T143-366q55-32 116-49t125-17q11 0 20.5.5T425-430q-7 17-10.5 35t-5.5 36l-25-1q-54 0-106 14t-99 42q-4.95 2.94-7.98 8.24Q168-290.47 168-284v20h251q4.85 18.63 12.92 36.81Q440-209 451-192H96Zm543 48-12-56q-14-5-26.5-12T577-228l-55 17-32-55 41-40q-4-14-3.5-29t3.5-29l-41-39 32-56 54 16q11-10 24-17.5t27-11.5l13-56h64l13 56q14 5 27 12t24 17l54-15 32 55-40 38q2 15 2 30.05 0 15.06-3 28.95l41 39-32 55-55-16q-11 9-23.5 16.5T717-200l-14 56h-64Zm33.21-120Q702-264 723-285.21t21-51Q744-366 722.79-387t-51-21Q642-408 621-386.79t-21 51Q600-306 621.21-285t51 21Zm-288-288Q414-552 435-573.21t21-51Q456-654 434.79-675t-51-21Q354-696 333-674.79t-21 51Q312-594 333.21-573t51 21Zm-.21-72Zm35 360Z"/></svg>
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="#">Settings 
+                                <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="m403-96-22-114q-23-9-44.5-21T296-259l-110 37-77-133 87-76q-2-12-3-24t-1-25q0-13 1-25t3-24l-87-76 77-133 110 37q19-16 40.5-28t44.5-21l22-114h154l22 114q23 9 44.5 21t40.5 28l110-37 77 133-87 76q2 12 3 24t1 25q0 13-1 25t-3 24l87 76-77 133-110-37q-19 16-40.5 28T579-210L557-96H403Zm59-72h36l19-99q38-7 71-26t57-48l96 32 18-30-76-67q6-17 9.5-35.5T696-480q0-20-3.5-38.5T683-554l76-67-18-30-96 32q-24-29-57-48t-71-26l-19-99h-36l-19 99q-38 7-71 26t-57 48l-96-32-18 30 76 67q-6 17-9.5 35.5T264-480q0 20 3.5 38.5T277-406l-76 67 18 30 96-32q24 29 57 48t71 26l19 99Zm18-168q60 0 102-42t42-102q0-60-42-102t-102-42q-60 0-102 42t-42 102q0 60 42 102t102 42Zm0-144Z"/></svg>
+                              </a>
+                              <a href="#">Log Out
+                              <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#B43F3F"><path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h264v72H216Zm432-168-51-51 81-81H384v-72h294l-81-81 51-51 168 168-168 168Z"/></svg>
+                              </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <!--body of the dashboard-->
+            <div class="dashboard">
+
+                <div class="order-chart">
+
+                    <div class="num-order">
+                        <div class="num-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#433D8B"><path d="M216-96q-29.7 0-50.85-21.15Q144-138.3 144-168v-480q0-29.7 21.15-50.85Q186.3-720 216-720h72q0-79.68 56.23-135.84 56.22-56.16 136-56.16Q560-912 616-855.84q56 56.16 56 135.84h72q29.7 0 50.85 21.15Q816-677.7 816-648v480q0 29.7-21.15 50.85Q773.7-96 744-96H216Zm0-72h528v-480H216v480Zm264.23-216Q560-384 616-440.16q56-56.16 56-135.84h-72q0 50-35 85t-85 35q-50 0-85-35t-35-85h-72q0 80 56.23 136 56.22 56 136 56ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM216-168v-480 480Z"/></svg>
+                        </div>
+                        <div class="num-text">
+                        <h3>Total Number of Orders</h3>
+                        <h5 style="color: #433D8B;">100,000</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="order-stats">
+                        <div class="stats1">
+                            <div class="sent-out">
+                                <h4>No of Orders Sent For Delivery</h4>
+                                <p><b>30,000</b></p>
+                            </div>
+
+                            <div class="pending-order">
+                                <h4>No of Orders Pending For Delivery</h4>
+                                <p><b>25,000</b></p>
+                            </div>
+
+                        </div>
+
+                        <div class="stats2">
+
+                            <div class="cancel">
+
+                                <h4>No of Orders Cancelled</h4>
+                                <p><b>10,000</b></p>
+                            </div>
+
+                            <div class="delivery">
+                                <h4>No of Orders Delivered Successfully</h4>
+                                <p><b>35,000</b></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="order-tab">
+
+                    <h2>Order History</h2>
+
+                    <table style="width: 100%;">
+
+                        
+
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Product</th>
+                            <th>Order ID</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Payment Status</th>
+                            <th>Order Status</th>
+                        </tr>
+
+                        <tr>
+                            <td>barbs2111</td>
+                            <td>Black diamond heel</td>
+                            <td>#bss246</td>
+                            <td>31/07/2024</td>
+                            <td>$85</td>
+                            <td class="paid"><p>Paid</p></td>
+                            <td class="delivered"><p>Delivered</p></td>
+                        </tr>
+
+                        <tr>
+                            <td>stargirl21</td>
+                            <td>Black crossed leather</td>
+                            <td>#bss046</td>
+                            <td>31/07/2024</td>
+                            <td>$75.05</td>
+                            <td class="paid"><p>Paid</p></td>
+                            <td class="pending"><p>Sent Out</p></td>
+                        </tr>
+
+                        <tr>
+                            <td>star6441</td>
+                            <td>Croc Black Shoe</td>
+                            <td>#bss456</td>
+                            <td>29/07/2024</td>
+                            <td>$105</td>
+                            <td class="pending"><p>Pending</p></td>
+                            <td class="pending"><p>Pending</p></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>star6441</td>
+                            <td>Mid night black crocs leather</td>
+                            <td>#bss456</td>
+                            <td>20/07/2024</td>
+                            <td>$97.35</td>
+                            <td class="paid"><p>Paid</p></td>
+                            <td class="delivered"><p>Delivered</p></td>
+                        </tr>
+
+                        <tr>
+                            <td>star2421</td>
+                            <td>Black diamond heel</td>
+                            <td>#bss862</td>
+                            <td>16/07/2024</td>
+                            <td>$85</td>
+                            <td class="failed"><p>Failed</p></td>
+                            <td class="failed"><p>Cancelled</p></td>
+                        </tr>
+
+                        <tr>
+                            <td>star3461</td>
+                            <td>White glossy flats</td>
+                            <td>#bss426</td>
+                            <td>16/07/2024</td>
+                            <td>$45</td>
+                            <td class="pending"><p>Pending</p></td>
+                            <td class="pending"><p>Pending</p></td>
+                        </tr>
+
+
+                    </table>
+
+                </div>
+
+
+            </div>
+
+            <div class="foot">
+                <h5>Powered by Barbie,2024</h5>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+     

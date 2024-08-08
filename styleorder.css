@@ -1,0 +1,185 @@
+/*styling the order page*/
+
+
+.order-chart{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-top: 2.5pc;
+    margin-bottom: 3pc;
+    margin-left: 2pc;
+    height: 45vh;
+    box-shadow: 3px 3px 3px 3px #d5d5d8 ;
+    border-radius: 5px;
+   
+}
+
+
+.num-order{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-around;
+    margin-top: 4pc;
+    padding: 2px 2px;
+    height: 20vh;
+    
+}
+
+.num-order h3{
+    margin-bottom: 1pc;
+}
+
+.order-stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: 3pc;
+
+    
+}
+
+
+.cancel,.delivery,.pending-order,.sent-out{
+    
+    padding: 6px 6px;
+    margin: 6px 6px;
+    width: 100%;
+    height: 20vh;
+    box-shadow: 2px 3px 3px 3px #d5d5d8 ;
+    border-radius: 1.2pc;
+    
+}
+
+.cancel h4{
+    margin-top: 2pc;
+    margin-bottom: 2pc;
+}
+
+.cancel{
+    color: #FF7F3E;
+}
+
+.delivery h4{
+    margin-top: 2pc;
+    margin-bottom: 2pc;
+}
+
+.pending-order{color: #667BC6;
+    }
+
+.pending-order h4{
+    margin-top: 2pc;
+    margin-bottom: 2pc;
+}
+
+
+
+.sent-out h4{
+    margin-top: 2pc;
+    margin-bottom: 2pc;
+}
+.sent-out{
+    color: #433D8B;
+}
+.delivery{
+    color: #1A5319;
+    }
+
+
+
+
+/*styling the order table*/
+
+.order-tab{
+    margin-top: 2pc;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px 3px #d5d5d8 ;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 70vh;
+    margin-bottom: 3pc;
+    margin-left: 2pc;
+    width: 95%;
+
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-tab h2{
+    color: #433D8B;
+    margin-left: 1.2pc;
+    padding: 2px 2px;
+    margin-bottom: 1pc;
+    
+}
+
+tr {
+    border-bottom: 2px solid #ddd;
+  }
+
+th{
+    color: #433D8B;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 1.2pc;
+    
+}
+
+.paid p{
+    background-color: #1A5319;
+    color: #fff;
+    text-align: center;
+    border-radius: 1pc;
+    padding: 5px 5px;
+    width: 50%;
+    margin-left: 2pc;
+
+}
+
+td{
+    padding-left: 1pc;
+    padding-bottom: 1pc;
+    padding-top: 1pc;
+    text-align: left;
+    
+   
+}
+
+
+.pending p{
+    background-color: #667BC6;
+    color: #fff;
+    text-align: center;
+    border-radius: 1pc;
+    padding: 5px 5px;
+    width: 50%;
+    margin-left: 2pc;
+}
+
+.failed p{
+    background-color: #FF7F3E;
+    color: #fff;
+    text-align: center;
+    border-radius: 1pc;
+    padding: 5px 5px;
+    width: 50%;
+    margin-left: 2pc;
+}
+
+.delivered p{
+    background-color: #1A5319;
+    color: #fff;
+    text-align: center;
+    border-radius: 1pc;
+    padding: 5px 5px;
+    width: 50%;
+    margin-left: 2pc;
+
+}
