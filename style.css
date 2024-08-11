@@ -270,6 +270,10 @@ body{
     width: 50%;
 }
 
+.featuredpic:hover img{
+    transform: scale(.9);
+ }
+
 .featuredpic h4{
     width: 50%;
     margin-top: 1pc;
@@ -336,6 +340,9 @@ body{
     box-shadow: 8px 5px 8px 5px #9d9da1 ;
 }
 
+.salesbox :hover {
+    transform: scale(.9);
+ }
 .salesbox1 img{
     width: 80%;
     height: 70%;
@@ -350,6 +357,7 @@ body{
     justify-content: space-around;
     box-shadow: 8px 5px 8px 5px #9d9da1 ;
 }
+
 
 .salesbox2 img{
     width: 80%;

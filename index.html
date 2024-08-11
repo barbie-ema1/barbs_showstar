@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylepreview.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="script.js" defer></script>
+    
     
     <title>Home|Page</title>
 </head>
@@ -114,7 +118,7 @@
         <div class="featured-p">
             <!--first row-->
             <div class="featured-row">
-                <div class="featuredpic">
+                <div class="featuredpic"  data-name="p-1">
                     <img src="./images/1.jpg" alt="">
                     <div class="feature-text">
                         <div class="ftext">
@@ -127,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="featuredpic">
+                <div class="featuredpic"  data-name="p-2">
                     <img src="./images/women5.jpg" alt="">
                     <div class="feature-text">
                         <div class="ftext">
@@ -140,7 +144,7 @@
                     </div>
                     
                 </div>
-                <div class="featuredpic">
+                <div class="featuredpic"  data-name="p-3">
                     <img src="./images/men5.jpg" alt="">
                     <div class="feature-text">
                         <div class="ftext">
@@ -154,7 +158,7 @@
                     </div>
                 </div>
 
-                <div class="featuredpic">
+                <div class="featuredpic"  data-name="p-4">
                     <img src="./images/women4.jpg" alt="">
                     <div class="feature-text">
                         <div class="ftext">
@@ -170,7 +174,7 @@
             </div>
             <!--second row-->
             <div class="featured-row">
-                <div class="featuredpic">
+                <div class="featuredpic"  data-name="p-5">
                     <img src="./images/women2.jpg" alt="">
                     <div class="feature-text">
                     <div class="ftext">
@@ -183,7 +187,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="featuredpic">
+                <div class="featuredpic"  data-name="p-6">
                     <img src="./images/menblack1.jpg" alt="">
                     <div class="feature-text">
                         <div class="ftext">
@@ -196,7 +200,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="featuredpic">
+                <div class="featuredpic"  data-name="p-7">
                     <img src="./images/womenshoe1.png" alt="">
                     <div class="feature-text">
                         <div class="ftext">
@@ -209,7 +213,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="featuredpic">
+                <div class="featuredpic"  data-name="p-8">
                     <img src="./images/men6.jpg" alt="">
                     <div class="feature-text">
                         <div class="ftext">
@@ -226,7 +230,458 @@
 
         </div>
 
-    </section>
+    
+
+    <!--Preview product section-->
+
+    <div class="products-preview">
+
+        <div class="preview" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <div class="flex-box">
+                <div class="left">
+                    <div class="big-img">
+                        <img src="./images/1.jpg">
+                    </div>
+                    <div class="images">
+                        <div class="small-img">
+                            <img src="./images/men6.jpg" onclick="showImg(this.src)">
+                        </div>
+                        <div class="small-img">
+                            <img src="./images/men5.jpg" onclick="showImg(this.src)">
+                        </div>
+                        <div class="small-img">
+                            <img src="./images/men2.png" onclick="showImg(this.src)">
+                        </div>
+                        <div class="small-img">
+                            <img src="./images/menblack1.jpg" onclick="showImg(this.src)">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="right">
+                    
+                    <div class="pname">Original Cros Leather Skin</div>
+                    <div class="ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="url">
+                        <p>Made of premium fine leather for classy men</p>
+                    </div>
+                    <div class="price">$125</div>
+                    <div class="size">
+                        <p>Size</p>
+                        <div class="psize active">38</div>
+                        <div class="psize">40</div>
+                        <div class="psize">42</div>
+                        <div class="psize">44</div>
+                    </div>
+                    <div class="quantity">
+                        <p>Quantity :</p>
+                        <input type="number" min="1" max="5" value="1">
+                    </div>
+                    <div class="btn-box">
+                        <button class="cart-btn">Add to Cart</button>
+                        <button class="buy-btn">Buy Now</button>
+                        <button class="wish-btn"><a href="signin.html">Add to Wishlist</a></button>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    
+    
+        <div class="preview" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <div class="flex-box">
+              <div class="left">
+                  <div class="big-img big-two">
+                      <img src="./images/women5.jpg">
+                  </div>
+                  <div class="images">
+                      <div class="small-img">
+                          <img src="./productimages/fpost_blackdiamond1b.jpg" onclick="showImg2(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_blackdiamond1c.jpg" onclick="showImg2(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_blackdiamond1d.jpg" onclick="showImg2(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./images/women5.jpg" onclick="showImg2(this.src)">
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="right">
+                  <div class="pname">Black Diamond Studded Heel</div>
+                  <div class="ratings">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="price">$85</div>
+                  <div class="size">
+                      <p>Size :</p>
+                      <div class="psize active">38</div>
+                        <div class="psize">40</div>
+                        <div class="psize">42</div>
+                        <div class="psize">44</div>
+                  </div>
+                  <div class="quantity">
+                      <p>Quantity :</p>
+                      <input type="number" min="1" max="5" value="1">
+                  </div>
+                  <div class="btn-box">
+                      <button class="cart-btn">Add to Cart</button>
+                      <button class="buy-btn">Buy Now</button>
+                      <button class="wish-btn"><a href="signin.html">Add to Wishlist</a></button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="preview" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <div class="flex-box">
+              <div class="left">
+                  <div class="big-img big-three">
+                      <img src="./images/men5.jpg">
+                  </div>
+                  <div class="images">
+                      <div class="small-img">
+                          <img src="./productimages/fpost_shinnyblack_1b.jpg" onclick="showImg3(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_shinnyblack_1c.jpg" onclick="showImg3(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_shinnyblack_1d.jpg" onclick="showImg3(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./images/men5.jpg" onclick="showImg3(this.src)">
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="right">
+                  <div class="pname">Shiny Black Leather For Men</div>
+                  <div class="ratings">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="price">$75</div>
+                  <div class="size">
+                      <p>Size :</p>
+                      <div class="psize active">38</div>
+                        <div class="psize">40</div>
+                        <div class="psize">42</div>
+                        <div class="psize">44</div>
+                  </div>
+                  <div class="quantity">
+                      <p>Quantity :</p>
+                      <input type="number" min="1" max="5" value="1">
+                  </div>
+                  <div class="btn-box">
+                      <button class="cart-btn">Add to Cart</button>
+                      <button class="buy-btn">Buy Now</button>
+                      <button class="wish-btn"><a href="signin.html">Add to Wishlist</a></button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="preview" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <div class="flex-box">
+              <div class="left">
+                  <div class="big-img big-four">
+                      <img src="./images/women4.jpg">
+                  </div>
+                  <div class="images">
+                      <div class="small-img">
+                          <img src="./productimages/fpost_womennude1b.jpg" onclick="showImg4(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_womennude1green.jpg" onclick="showImg4(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_womennude1grey.jpg" onclick="showImg4(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./images/women4.jpg" onclick="showImg4(this.src)">
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="right">
+                  <div class="pname">Golden Anklet Heel for Women</div>
+                  <div class="ratings">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="price">$65</div>
+                  <div class="size">
+                      <p>Size :</p>
+                      <div class="psize active">38</div>
+                        <div class="psize">40</div>
+                        <div class="psize">42</div>
+                        <div class="psize">44</div>
+                  </div>
+                  <div class="quantity">
+                      <p>Quantity :</p>
+                      <input type="number" min="1" max="5" value="1">
+                  </div>
+                  <div class="btn-box">
+                      <button class="cart-btn">Add to Cart</button>
+                      <button class="buy-btn">Buy Now</button>
+                      <button class="wish-btn"><a href="signin.html">Add to Wishlist</a></button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="preview" data-target="p-5">
+            <i class="fas fa-times"></i>
+            <div class="flex-box">
+              <div class="left">
+                  <div class="big-img big-five">
+                      <img src="./images/women2.jpg">
+                  </div>
+                  <div class="images">
+                      <div class="small-img">
+                          <img src="./productimages/fpost_blackcrossed_2b.jpg" onclick="showImg5(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_blackcrossed_2d.png" onclick="showImg5(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_blackcrossed_2c.jpg" onclick="showImg5(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./images/women2.jpg" onclick="showImg5(this.src)">
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="right">
+                  <div class="url"></div>
+                  <div class="pname">Black Crossed Heel Leather</div>
+                  <div class="ratings">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="price">$75.50</div>
+                  <div class="size">
+                      <p>Size :</p>
+                      <div class="psize active">38</div>
+                        <div class="psize">40</div>
+                        <div class="psize">42</div>
+                        <div class="psize">44</div>
+                  </div>
+                  <div class="quantity">
+                      <p>Quantity :</p>
+                      <input type="number" min="1" max="5" value="1">
+                  </div>
+                  <div class="btn-box">
+                      <button class="cart-btn">Add to Cart</button>
+                      <button class="buy-btn">Buy Now</button>
+                      <button class="wish-btn"><a href="signin.html">Add to Wishlist</a></button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="preview" data-target="p-6">
+            <i class="fas fa-times"></i>
+            <div class="flex-box">
+              <div class="left">
+                  <div class="big-img big-six">
+                      <img src="./images/menblack1.jpg">
+                  </div>
+                  <div class="images">
+                      <div class="small-img">
+                          <img src="./productimages/fpost_midnight_1b.jpg" onclick="showImg6(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_midnight_1c.jpg" onclick="showImg6(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_midnight_1d.jpg" onclick="showImg6(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./images/menblack1.jpg" onclick="showImg6(this.src)">
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="right">
+                  
+                  <div class="pname">Mid Night Black Leather Crocs</div>
+                  <div class="ratings">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-alt"></i>
+                  </div>
+                  <div class="price">$40</div>
+                  <div class="size">
+                      <p>Size :</p>
+                      <div class="psize active">38</div>
+                        <div class="psize">40</div>
+                        <div class="psize">42</div>
+                        <div class="psize">44</div>
+                  </div>
+                  <div class="quantity">
+                      <p>Quantity :</p>
+                      <input type="number" min="1" max="5" value="1">
+                  </div>
+                  <div class="btn-box">
+                      <button class="cart-btn">Add to Cart</button>
+                      <button class="buy-btn">Buy Now</button>
+                      <button class="wish-btn"><a href="signin.html">Add to Wishlist</a></button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="preview" data-target="p-7">
+            <i class="fas fa-times"></i>
+            <div class="flex-box">
+              <div class="left">
+                  <div class="big-img big-seven">
+                      <img src="./images/womenshoe1.png">
+                  </div>
+                  <div class="images">
+                      <div class="small-img">
+                          <img src="./productimages/fpost_glossy1b.jpg" onclick="showImg7(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_glossy1c.jpg" onclick="showImg7(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_glossy1d.jpg" onclick="showImg7(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./images/womenshoe1.png" onclick="showImg7(this.src)">
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="right">
+                  
+                  <div class="pname">Glossy White and Black Flats</div>
+                  <div class="ratings">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-alt"></i>
+                  </div>
+                  <div class="price">$40</div>
+                  <div class="size">
+                      <p>Size :</p>
+                      <div class="psize active">38</div>
+                        <div class="psize">40</div>
+                        <div class="psize">42</div>
+                        <div class="psize">44</div>
+                  </div>
+                  <div class="quantity">
+                      <p>Quantity :</p>
+                      <input type="number" min="1" max="5" value="1">
+                  </div>
+                  <div class="btn-box">
+                      <button class="cart-btn">Add to Cart</button>
+                      <button class="buy-btn">Buy Now</button>
+                      <button class="wish-btn"><a href="signin.html">Add to Wishlist</a></button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="preview" data-target="p-8">
+            <i class="fas fa-times"></i>
+            <div class="flex-box">
+              <div class="left">
+                  <div class="big-img big-eig">
+                      <img src="./images/men6.jpg">
+                  </div>
+                  <div class="images">
+                      <div class="small-img">
+                          <img src="./productimages/fpost_crocs_1b.jpg" onclick="showImg8(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_crocs_1d.jpg" onclick="showImg8(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./productimages/fpost_crocs_1c.jpg" onclick="showImg8(this.src)">
+                      </div>
+                      <div class="small-img">
+                          <img src="./images/men6.jpg" onclick="showImg8(this.src)">
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="right">
+    
+                  <div class="pname">Brown Black Tips Leather Skin</div>
+                  <div class="ratings">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="price">$40</div>
+                  <div class="size">
+                      <p>Size :</p>
+                      <div class="psize active">38</div>
+                        <div class="psize">40</div>
+                        <div class="psize">42</div>
+                        <div class="psize">44</div>
+                  </div>
+                  <div class="quantity">
+                      <p>Quantity :</p>
+                      <input type="number" min="1" max="5" value="1">
+                  </div>
+                  <div class="btn-box">
+                      <button class="cart-btn">Add to Cart</button>
+                      <button class="buy-btn">Buy Now</button>
+                      <button class="wish-btn"><a href="signin.html">Add to Wishlist</a></button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+
+
+
+
+
+    
+    </div>
+</section>
+
+
+
 
     <!--the sales section-->
     <section>
@@ -336,6 +791,7 @@
 
 
     <script src="app.js"></script>
+
 </body>
 
 </html>
