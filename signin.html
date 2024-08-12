@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylelogin.css">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
     
     <title>Signin|Page</title>
@@ -14,32 +16,184 @@
 
 <body>
 
+    
+    <div class="mainhead">
+
+        <!--Site Logo section-->
+        <div class="nav-logo">
+            <img src="./images/footprint.svg" alt="">
+            <h3>Barbs Show St<img src="./images/star_logo.png" alt="" class="starlogo">r</h3>
+        </div>
+        <!--site navigation bar left section-->
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+        </div>
+        <!--site navigation bar right section-->
+        <div class="nav-right">
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="#">
+                        <img src="./images/account_icon.png" alt="" class="size">
+                    </a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="signin.html">Sign In 
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M480-144v-72h264v-528H480v-72h264q29.7 0 50.85 21.15Q816-773.7 816-744v528q0 29.7-21.15 50.85Q773.7-144 744-144H480Zm-72-168-51-51 81-81H144v-72h294l-81-81 51-51 168 168-168 168Z"/></svg>
+                    </a>
+                    <a href="register.html">Create Account
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M444-288h72v-156h156v-72H516v-156h-72v156H288v72h156v156Zm36.28 192Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Zm-.28-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Z"/></svg>
+                    </a>
+                  </div>
+            </div> 
+
+
+            <a href="">
+                <img src="./images/search.png" alt="" class="size">
+            </a>
+            <a href="#">
+                <img src="./images/favorite.png" alt="" class="size">
+            </a>
+            <a href="#">
+                <img src="./images/shopping_bag.png" alt="" class="size">
+            </a>
+        </div>
+    </div>
+
     <div class="signin-flex">
 
-        <div class="left-box">
-           
+        <div class="left-box"> 
+            <a href="adminlogin.html">
+                <img src="./images/Shopping-cuate (1).svg" alt="">
+            </a>
         </div>
 
 
         <div class="right-box">
-            <h2>Hi! Welcome Back</h2>
 
-            <form>
-                <label for="username">
-                    <input type="text" placeholder="Enter your username" required minlength="4" maxlength="12">
-                </label>
-
-                <label for="password">
-
-                    <input type="password" placeholder="Enter your password" required>
-
-                </label>
-            </form>
+            <div class="wrapper">
+                <div class="title-text">
+                <div class="title login">Login</div>
+                <div class="title signup">Signup Form</div>
+                </div>
+                <div class="form-container">
+                <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">Login</label>
+                    <label for="signup" class="slide signup">Signup</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <div class="form-inner">
+                    <form action="userdashboard.html" class="login">
+                    <h2>Hi! Welcome back</h2>
+                    <div class="field">
+                        <input type="email" id="email" placeholder="Enter email here..." required>
+                    </div>
+                    <div class="field">
+                        <input type="password" id="password" placeholder="Enter password here..." required>
+                    </div>
+                    <div class="pass-link"><a href="#">Forgot password?</a></div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login" onclick="saveData()">
+                    </div>
+                    <div class="signup-link">Don't have a account? <a href="#signup">Signup now</a></div>
+                    </form>
+                    <form action="#" class="signup">
+                    <div class="field">
+                        <input type="text" id="user-name" placeholder="Enter your full name here" required minlength="4" maxlength="16">
+                    </div>
+                    <div class="field">
+                        <input type="email" id="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" id="passwordd" placeholder="Re-enter password" required>
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Signup" onclick="addData()">
+                    </div>
+                    <div class="signup-link">Already have an account? <a href="#login">Signin now</a></div>
+                    
+                    </form>
+                </div>
+                </div>
+            </div>
         </div>
 
 
-
     </div>
+
+
+    <script>
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+      });
+
+    </script>
+
+
+    <script src="login.js">
+
+    </script>
+
+    <script>
+        function saveData(){
+            let email, password;
+            email=document.getElementById("email").value;
+            password=document.getElementById("password").value;
+
+            let user_record = new Array();
+            user_record=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+
+            if(user_record.some((v)=>{
+                return v.email==email && v.password==password
+
+            })){
+                alert("Login Succesfull!")
+                let current_user=user_record.filter((v)=>{
+                    return v.email==email && v.password==password
+
+                })[0]
+
+                localStorage.setItem("user-name",current_user.username);
+                localStorage.setItem("email",current_user.email);
+                window.location.assign("userdashboard.html")
+
+
+            }
+            else{
+                alert("Login Failed, Incorrect email and password")
+            }
+
+        }
+
+
+            
+        
+    </script>
+
+
 
 
 </body>

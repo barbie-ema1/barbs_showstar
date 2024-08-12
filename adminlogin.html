@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylelogin.css">
+    
+    
+    
+    <title>Admin Signin|Page</title>
+</head>
+
+<body>
+
+    <div class="signin-flex">
+
+        <div class="left-box"> 
+            <a href="signin.html">
+                <img src="./images/Shopping bag-bro.svg" alt="" class="adminimg">
+            </a>
+        </div>
+
+
+        <div class="right-box">
+            <div class="wrapper">
+                <div class="title-text">
+                <div class="title login">Login</div>
+                </div>
+                <div class="form-container">
+                <div class="form-inner">
+                    <form action="admindashboard.html" class="login">
+                    <h2>Welcome back Admin!</h2>
+                    <div class="field">
+                        <input type="text" id="email" placeholder="Enter username here..." required >
+                    </div>
+                    <div class="field">
+                        <input type="password" id="password" placeholder="Enter password here..." >
+                    </div>
+                    <div class="pass-link"><a href="#">Forgot password?</a></div>
+                    <div class="field btn">
+                        <div class="btn-layer"><a href="admindashboard.html"></a></div>
+                        <input type="submit" value="Login" onclick="addData()">
+                    </div>
+                    </form>
+                </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function addData(){
+            
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+
+            if(
+                email=='admin' && password=='admin001pas'){
+
+                alert("Login Succesfull!")
+
+                window.location.assign("admindashboard.html")
+            }
+            else{
+                alert("Login Failed, Incorrect email and password")
+                }
+
+            localStorage.setItem("users",JSON.stringify(user_records));
+        }
+
+    </script>
