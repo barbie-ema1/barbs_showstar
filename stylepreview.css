@@ -292,7 +292,38 @@ html{
  .wish-btn:hover{
     background-color: #777;
  }
+
+
+
  
+ @media  (min-width:738px) and (max-width:1024px)  {
+
+   .left{
+      width: 50%;
+      margin-left: 3pc;
+      margin-top: 0.5pc;
+   }
+   
+   .right{
+      background-color: #fff;
+      margin-bottom: 4pc;
+      margin-top: 2pc;
+      width: 50%;
+   }
+   
+   .big-img{
+      width: 200px;
+   }
+   .images{
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      height: 40%;
+      margin-top: 15px;
+   }
+
+ }
+
  
  
  @media (max-width:991px){

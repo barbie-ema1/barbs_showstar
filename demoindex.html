@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylepreview.css">
+    <link rel="stylesheet" href="styledemo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="script.js" defer></script>
     
     
-    <title>Home|Page</title>
+    <title>DemoHome|Page</title>
 </head>
 
 <body>
@@ -48,17 +49,53 @@
 
 
             <a href="">
-                <img src="./images/search.png" alt="" class="size">
+                <div class="searchbar">
+                    <form action="#">
+                        <input type="search" placeholder="Enter search here" />
+                        <img src="./images/search.png" alt="" class="size" id="search-icon">
+                    </form>
+                </div>
             </a>
             <a href="#">
                 <img src="./images/favorite.png" alt="" class="size">
             </a>
+            
             <a href="#">
-                <img src="./images/shopping_bag.png" alt="" class="size">
+                <div class="shopping-cart">
+                    <div class="sum-prices">
+                        <img src="./images/shopping_bag.png" alt="" class="size shoppingCartButton">
+                        <span id="cartnum">0
+                        </span>
+                    </div>
+                </div>
             </a>
         </div>
 
+
+        <!--the cart section-->
+
+        <div class="producstOnCart hide">
+            <div class="overlay"></div>
+            <div class="top">
+                <button id="closeButton">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+                <h3>Cart</h3>
+            </div>
+            <ul id="buyItems">
+                <h4 class="empty">Your shopping cart is empty</h4>
+                
+            </ul>
+            <button class="btn checkout hidden">Check out</button>
+        </div>
+
     </div>
+
+
+    
+
+
+
     <!--First section of the landing page-->
     <section class="section-one">
         <div class="carousel">
@@ -238,10 +275,11 @@
 
         <div class="preview" data-target="p-1">
             <i class="fas fa-times"></i>
-            <div class="flex-box">
-                <div class="left">
-                    <div class="big-img">
-                        <img src="./images/1.jpg">
+
+            <div class="flex-box product-container">
+                <div class="left products">
+                    <div class="big-img product-under">
+                        <img src="./images/1.jpg" class="product-image">
                     </div>
                     <div class="images">
                         <div class="small-img">
@@ -285,7 +323,8 @@
                         <input type="number" min="1" max="5" value="1">
                     </div>
                     <div class="btn-box">
-                        <button class="cart-btn">Add to Cart</button>
+                        <button class="cart-btn btn btn-small addToCart"
+                        data-product-id="1">Add to Cart</button>
                         <button class="buy-btn">Buy Now</button>
                         <button class="wish-btn"><a href="signin.html">Add to Wishlist</a></button>
                     </div>
@@ -329,7 +368,7 @@
                   </div>
                   <div class="price">$85</div>
                   <div class="size">
-                      <p>Size </p>
+                      <p>Size :</p>
                       <div class="psize active">38</div>
                         <div class="psize">40</div>
                         <div class="psize">42</div>
@@ -382,7 +421,7 @@
                   </div>
                   <div class="price">$75</div>
                   <div class="size">
-                      <p>Size</p>
+                      <p>Size :</p>
                       <div class="psize active">38</div>
                         <div class="psize">40</div>
                         <div class="psize">42</div>
@@ -435,7 +474,7 @@
                   </div>
                   <div class="price">$65</div>
                   <div class="size">
-                      <p>Size</p>
+                      <p>Size :</p>
                       <div class="psize active">38</div>
                         <div class="psize">40</div>
                         <div class="psize">42</div>
@@ -490,7 +529,7 @@
                   </div>
                   <div class="price">$75.50</div>
                   <div class="size">
-                      <p>Size</p>
+                      <p>Size :</p>
                       <div class="psize active">38</div>
                         <div class="psize">40</div>
                         <div class="psize">42</div>
@@ -544,7 +583,7 @@
                   </div>
                   <div class="price">$40</div>
                   <div class="size">
-                      <p>Size</p>
+                      <p>Size :</p>
                       <div class="psize active">38</div>
                         <div class="psize">40</div>
                         <div class="psize">42</div>
@@ -598,7 +637,7 @@
                   </div>
                   <div class="price">$40</div>
                   <div class="size">
-                      <p>Size</p>
+                      <p>Size :</p>
                       <div class="psize active">38</div>
                         <div class="psize">40</div>
                         <div class="psize">42</div>
@@ -652,7 +691,7 @@
                   </div>
                   <div class="price">$40</div>
                   <div class="size">
-                      <p>Size</p>
+                      <p>Size :</p>
                       <div class="psize active">38</div>
                         <div class="psize">40</div>
                         <div class="psize">42</div>
@@ -791,6 +830,127 @@
 
 
     <script src="app.js"></script>
+
+    <script>
+
+        let productsInCart = JSON.parse(localStorage.getItem('shoppingCart'));
+        if(!productsInCart){
+            productsInCart = [];
+        }
+        const parentElement = document.querySelector('#buyItems');
+        const cartSum = document.querySelector('#cartnum');
+        const products = document.querySelectorAll('.product-under');
+        const cartnumber = document.querySelector('cartnum');
+
+
+        const countTheSumPrice = function () { // 4
+            let sum = 0;
+            productsInCart.forEach(item => {
+                sum += item.count;
+                
+            });
+            return sum;
+        }
+
+        const countTheTotalPrice = function () { // 4
+            let sum = 0;
+            productsInCart.forEach(item => {
+                sum += item.price;
+                
+            });
+            return sum;
+        }
+
+
+
+        const updateShoppingCartHTML = function () {  // 3
+            localStorage.setItem('shoppingCart', JSON.stringify(productsInCart));
+            if (productsInCart.length > 0) {
+                let result = productsInCart.map(product => {
+                    return `
+                        <li class="buyItem">
+                            <img src="${product.image}">
+                            <div>
+                                <h5>${product.name}</h5>
+                                <h6>$${product.price}</h6>
+                                <div>
+                                    <button class="button-minus" data-id=${product.id}>-</button>
+                                    <span class="countOfProduct">${product.count}</span>
+                                    <button class="button-plus" data-id=${product.id}>+</button>
+                                </div>
+                            </div>
+                        </li>`
+                });
+                parentElement.innerHTML = result.join('');
+                document.querySelector('.checkout').classList.remove('hidden');
+                cartSum.innerHTML = + countTheSumPrice();
+
+            }
+            else {
+                document.querySelector('.checkout').classList.add('hidden');
+                parentElement.innerHTML = '<h4 class="empty">Your shopping cart is empty</h4>';
+                cartSumPrice.innerHTML = '';
+            }
+        }
+
+        function updateProductsInCart(product) { // 2
+            for (let i = 0; i < productsInCart.length; i++) {
+                if (productsInCart[i].id == product.id) {
+                    productsInCart[i].count += 1;
+                    productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
+                    return;
+                }
+            }
+            productsInCart.push(product);
+        }
+
+        products.forEach(item => {   // 1
+            item.addEventListener('click', (e) => {
+                if (e.target.classList.contains('addToCart')) {
+                    const productID = e.target.dataset.productId;
+                    const productName = item.querySelector('.productName').innerHTML;
+                    const productPrice = item.querySelector('.priceValue').innerHTML;
+                    const productImage = item.querySelector('img').src;
+                    let product = {
+                        name: productName,
+                        image: productImage,
+                        id: productID,
+                        count: 1,
+                        price: +productPrice,
+                        basePrice: +productPrice,
+                    }
+                    updateProductsInCart(product);
+                    updateShoppingCartHTML();
+                }
+            });
+        });
+
+        parentElement.addEventListener('click', (e) => { // Last
+            const isPlusButton = e.target.classList.contains('button-plus');
+            const isMinusButton = e.target.classList.contains('button-minus');
+            if (isPlusButton || isMinusButton) {
+                for (let i = 0; i < productsInCart.length; i++) {
+                    if (productsInCart[i].id == e.target.dataset.id) {
+                        if (isPlusButton) {
+                            productsInCart[i].count += 1
+                        }
+                        else if (isMinusButton) {
+                            productsInCart[i].count -= 1
+                        }
+                        productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
+
+                    }
+                    if (productsInCart[i].count <= 0) {
+                        productsInCart.splice(i, 1);
+                    }
+                }
+                updateShoppingCartHTML();
+            }
+        });
+
+        updateShoppingCartHTML();
+
+    </script>
 
 </body>
 

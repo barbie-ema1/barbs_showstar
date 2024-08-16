@@ -1,0 +1,93 @@
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+
+}
+
+.rightbox{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+}
+
+
+
+.first{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.5pc;
+
+}
+
+.second h3{
+    font-weight: 500;
+    color: #43BB;
+}
+.field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.field input{
+    width: 80%;
+    height: 20%;
+}
+
+.btn-btn{
+    display: flex;
+    margin-top: 1pc;
+}
+
+.butn{
+    background-color: black;
+    color: #fff;
+    padding: 8px 8px;
+    margin: 8px 8px;
+    font-family: 500;
+    font-size: 16px;
+    height: 40%;
+    border-radius: 3px;
+}
+
+
+
+.first h3{
+    font-weight: 500;
+    color: #43BB;
+
+}
+
+.first img{
+    width: 20%;
+    height: 20%;
+}
+
+.field span img{
+    width: 4%;
+    height: 4%;
+    position: absolute;
+    margin-top: -3.4pc;
+    margin-left: 20pc;
+
+}
+.c-row{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+

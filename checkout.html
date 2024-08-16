@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <title>checkout|Page</title>
+</head>
+
+<body>
+
+    <div class="mainbox">
+
+        <div class="flexbox">
+
+            <div class="leftbox">
+
+                <img src="./images/Shopping bag-cuate.svg" alt="" >
+
+            </div>
+
+            <div class="rightbox">
+
+                <form action="userdashboard.html">
+
+                    <div class="first">
+                        <img src="./images/delivery-truck.png" alt="">
+                        <h3>Delivery Details</h3>
+                    
+
+                        <div class="field">
+                            <label for="name">FULL NAME</label>
+                            <input type="text" name="fname" id="fname" required>
+                        </div>
+                        <div class="field">
+                            <label for="address">ADDRESS</label>
+                            <input type="text" name="address" id="address" required>
+                        </div>
+                        <div class="field">
+                            <label for="city">CITY</label>
+                            <input type="text" name="city" id="city" required>
+                        </div>
+                        <div class="field">
+                            <label for="state">STATE</label>
+                            <input type="text" name="state" id="state" required>
+                        </div>
+                        <div class="field">
+                            <label for="pcode">POSTAL CODE</label>
+                            <input type="number" name="pcode" id="pcode" required>
+                        </div>
+                    
+                    </div>
+                </form>
+                <form>
+                    <div class="second">
+
+                            <h3>Card Details</h3>
+
+                            <div class="field">
+                                <label for="namecard">NAME ON CARD</label>
+                                <input type="text" name="ncard" id="ncard" required>
+                                <span><img src="./images/credit-card.png" alt=""></span>
+                            </div>
+                            <div class="field">
+                                <label for="cardno">CARD NUMBER</label>
+                                <input type="number" name="cardno" id="cardno" maxlength="16" required>
+                            </div>
+                            <div class="field">
+                                <div class="c-row">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" name="cvv" id="cvv" required maxlength="5">
+                                    <label for="exp">EXPIRY MONTH / YEAR</label>
+                                    <input type="month" name="expmonth" id="expmonth" required>
+                                </div>
+                            </div>
+
+                            <div class="btn-btn">
+                                <button class="butn">PAY NOW</button>
+                            </div>
+
+                            
+                    </div>
+                </form>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+</html>
