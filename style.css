@@ -539,6 +539,12 @@ button a{
     color: #F5F7F8;
 }
 
+.flashsale{
+    margin-top: 2pc;
+    border-top: 2px solid rgb(218, 214, 214);
+    
+}
+
 @media  (min-width:738px) and (max-width:1024px)  {
 
     .mainhead{

@@ -13,6 +13,52 @@
 
 <body>
 
+    <div class="mainhead">
+
+        <!--Site Logo section-->
+        <div class="nav-logo">
+            <img src="./images/footprint.svg" alt="">
+            <h3>Barbs Show St<img src="./images/star_logo.png" alt="" class="starlogo">r</h3>
+        </div>
+        <!--site navigation bar left section-->
+        <div class="nav-left">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+        </div>
+        <!--site navigation bar right section-->
+        <div class="nav-right">
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="#">
+                        <img src="./images/account_icon.png" alt="" class="size">
+                    </a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="signin.html">Sign In 
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M480-144v-72h264v-528H480v-72h264q29.7 0 50.85 21.15Q816-773.7 816-744v528q0 29.7-21.15 50.85Q773.7-144 744-144H480Zm-72-168-51-51 81-81H144v-72h294l-81-81 51-51 168 168-168 168Z"/></svg>
+                    </a>
+                    <a href="signin.html">Create Account
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M444-288h72v-156h156v-72H516v-156h-72v156H288v72h156v156Zm36.28 192Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Zm-.28-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Z"/></svg>
+                    </a>
+                  </div>
+            </div> 
+
+
+            <a href="">
+                <img src="./images/search.png" alt="" class="size">
+            </a>
+            <a href="#">
+                <img src="./images/favorite.png" alt="" class="size">
+            </a>
+            <a href="#">
+                <img src="./images/shopping_bag.png" alt="" class="size">
+            </a>
+        </div>
+
+    </div>
+
     <div class="mainbox">
 
         <div class="flexbox">
@@ -26,63 +72,66 @@
             <div class="rightbox">
 
                 <form action="userdashboard.html">
-
-                    <div class="first">
-                        <img src="./images/delivery-truck.png" alt="">
-                        <h3>Delivery Details</h3>
-                    
-
-                        <div class="field">
-                            <label for="name">FULL NAME</label>
-                            <input type="text" name="fname" id="fname" required>
-                        </div>
-                        <div class="field">
-                            <label for="address">ADDRESS</label>
-                            <input type="text" name="address" id="address" required>
-                        </div>
-                        <div class="field">
-                            <label for="city">CITY</label>
-                            <input type="text" name="city" id="city" required>
-                        </div>
-                        <div class="field">
-                            <label for="state">STATE</label>
-                            <input type="text" name="state" id="state" required>
-                        </div>
-                        <div class="field">
-                            <label for="pcode">POSTAL CODE</label>
-                            <input type="number" name="pcode" id="pcode" required>
-                        </div>
-                    
-                    </div>
-                </form>
-                <form>
-                    <div class="second">
-
-                            <h3>Card Details</h3>
+                    <div class="formbox">
+                        <div class="first">
+                            <img src="./images/delivery-truck.png" alt="">
+                            <h3>Delivery Details</h3>
+                        
 
                             <div class="field">
-                                <label for="namecard">NAME ON CARD</label>
-                                <input type="text" name="ncard" id="ncard" required>
-                                <span><img src="./images/credit-card.png" alt=""></span>
+                                <label for="name">FULL NAME</label>
+                                <input type="text" name="fname" id="fname" required>
                             </div>
                             <div class="field">
-                                <label for="cardno">CARD NUMBER</label>
-                                <input type="number" name="cardno" id="cardno" maxlength="16" required>
+                                <label for="address">ADDRESS</label>
+                                <input type="text" name="address" id="address" required>
                             </div>
                             <div class="field">
-                                <div class="c-row">
-                                    <label for="cvv">CVV</label>
-                                    <input type="text" name="cvv" id="cvv" required maxlength="5">
-                                    <label for="exp">EXPIRY MONTH / YEAR</label>
-                                    <input type="month" name="expmonth" id="expmonth" required>
+                                <label for="city">CITY</label>
+                                <input type="text" name="city" id="city" required>
+                            </div>
+                            <div class="field">
+                                <label for="state">STATE</label>
+                                <input type="text" name="state" id="state" required>
+                            </div>
+                            <div class="field">
+                                <label for="pcode">POSTAL CODE</label>
+                                <input type="number" name="pcode" id="pcode" required>
+                            </div>
+                        
+                        </div>
+                    
+                        <div class="second">
+
+                                <h3>Card Details</h3>
+
+                                <div class="field">
+                                    <label for="namecard">NAME ON CARD</label>
+                                    <input type="text" name="ncard" id="ncard" required>
+                                    <span><img src="./images/credit-card.png" alt=""></span>
                                 </div>
-                            </div>
+                                <div class="field">
+                                    <label for="cardno">CARD NUMBER</label>
+                                    <input type="number" name="cardno" id="cardno" maxlength="16" required>
+                                </div>
+                                <div class="field">
+                                    <div class="c-row">
+                                        <div class="cvv">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" name="cvv" id="cvv" required maxlength="5">
+                                        </div>
+                                        <div class="exp">
+                                        <label for="exp">EXPIRY MONTH / YEAR</label>
+                                        <input type="month" name="expmonth" id="expmonth" required>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <div class="btn-btn">
-                                <button class="butn">PAY NOW</button>
-                            </div>
-
-                            
+                                <div class="btn-btn">
+                                    <button class="butn">PAY NOW</button>
+                                </div>
+    
+                        </div>
                     </div>
                 </form>
 

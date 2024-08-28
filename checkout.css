@@ -1,3 +1,13 @@
+.mainbox{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 8pc;
+    margin-top: 3pc;
+    box-shadow: 8px 5px 8px 5px #d0d0d6 ;
+    border-radius: 2pc;
+}
+
 .flexbox{
     display: flex;
     flex-direction: row;
@@ -19,7 +29,10 @@
     justify-content: space-between;
 }
 
-
+.formbox{
+    display: flex;
+    flex-direction: row;
+}
 
 .first{
     display: flex;
@@ -30,7 +43,7 @@
 .second{
     display: flex;
     flex-direction: column;
-    margin-top: 4.5pc;
+    margin-top: 4pc;
 
 }
 
@@ -60,7 +73,7 @@
     margin: 8px 8px;
     font-family: 500;
     font-size: 16px;
-    height: 40%;
+    height: 65%;
     border-radius: 3px;
 }
 
@@ -81,13 +94,13 @@
     width: 4%;
     height: 4%;
     position: absolute;
-    margin-top: -3.4pc;
-    margin-left: 20pc;
+    margin-top: -3pc;
+    margin-left: 15pc;
 
 }
 .c-row{
     display: flex;
     flex-direction: row;
-    width: 60%;
+    width: 90%;
 }
 
