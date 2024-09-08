@@ -41,7 +41,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .searchbar > form input {
     position: fixed;
     left: 3px;
-    top: -3px;
+    top: 3px;
     width: 80%;
     height: 36px;
     line-height: 20px;
@@ -389,3 +389,23 @@ input[type="search"]::-webkit-search-results-decoration {
     top: 0;
     width: 100%;
 }
+
+@media  (min-width:554px) and (max-width:768px)  {
+
+    .searchbar > form input {
+        width: 60%;
+        left: -1pc;
+
+    }
+
+    .searchbar > form:hover #search-icon {
+        background: #96c8cc;
+        color: white;
+        left: 8pc;
+    }
+
+    
+}
+
+
+    

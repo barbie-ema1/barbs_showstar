@@ -91,6 +91,11 @@ html{
     padding:1rem 0;
     font-size: 2.5rem;
     color:#DC5F00;
+    text-align: center;
+ }
+
+ .price{
+   text-align: center;
  }
  
  .products-preview .preview .buttons{
@@ -300,7 +305,7 @@ html{
 
    .left{
       width: 50%;
-      margin-left: 3pc;
+      margin-left: 1pc;
       margin-top: 0.5pc;
    }
    
@@ -312,7 +317,7 @@ html{
    }
    
    .big-img{
-      width: 200px;
+      width: 220px;
    }
    .images{
       display: flex;
@@ -324,7 +329,21 @@ html{
 
  }
 
- 
+ @media  (min-width:820px) and (max-width:1180px)  {
+   .left{
+      margin-top: 5pc;
+   }
+   
+   .big-img{
+      width: 175px;
+   }
+
+   .small-img{
+      width: 80%;
+      height: 20vh;
+   }
+
+ }
  
  @media (max-width:991px){
  
@@ -339,6 +358,34 @@ html{
     .products-preview .preview img{
        height: 25rem;
     }
+
+    .left{
+      margin-left: 0.5pc;
+      margin-top: 3pc;
+    }
+
+    .big-img{
+      width: 85%;
+      margin-left: -1pc;
+   }
+   
+   .images{
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      height: 30%;
+      margin-top: 15px;
+   }
+
+   .right{
+      margin-left: -1pc;
+   }
+
+   .btn-box{
+      width: 100%;
+   }
+   
+
  
  }
  

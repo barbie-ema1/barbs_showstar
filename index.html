@@ -23,59 +23,61 @@
             <h3>Barbs Show St<img src="./images/star_logo.png" alt="" class="starlogo">r</h3>
         </div>
         <!--site navigation bar left section-->
-        <div class="nav-left">
-            <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="product.html">Product</a>
-        </div>
-        <!--site navigation bar right section-->
-        <div class="nav-right">
+        <div class="navleft">
+            <div class="nav-left">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="product.html">Product</a>
+            </div>
+            <!--site navigation bar right section-->
+            <div class="nav-right">
 
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <a href="#">
-                        <img src="./images/account_icon.png" alt="" class="size">
-                    </a>
-                </button>
-                <div class="dropdown-content">
-                    <a href="signin.html">Sign In 
-                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M480-144v-72h264v-528H480v-72h264q29.7 0 50.85 21.15Q816-773.7 816-744v528q0 29.7-21.15 50.85Q773.7-144 744-144H480Zm-72-168-51-51 81-81H144v-72h294l-81-81 51-51 168 168-168 168Z"/></svg>
-                    </a>
-                    <a href="signin.html">Create Account
-                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M444-288h72v-156h156v-72H516v-156h-72v156H288v72h156v156Zm36.28 192Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Zm-.28-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Z"/></svg>
-                    </a>
-                  </div>
-            </div> 
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="#">
+                            <img src="./images/account_icon.png" alt="" class="size">
+                        </a>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="signin.html">Sign In 
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M480-144v-72h264v-528H480v-72h264q29.7 0 50.85 21.15Q816-773.7 816-744v528q0 29.7-21.15 50.85Q773.7-144 744-144H480Zm-72-168-51-51 81-81H144v-72h294l-81-81 51-51 168 168-168 168Z"/></svg>
+                        </a>
+                        <a href="signin.html">Create Account
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M444-288h72v-156h156v-72H516v-156h-72v156H288v72h156v156Zm36.28 192Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Zm-.28-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Z"/></svg>
+                        </a>
+                    </div>
+                </div> 
 
 
-            
-                <div class="searchbar">
-                    <form action="#">
-                        <input type="search" placeholder="Enter search here" />
-                        <img src="./images/search.png" alt="" class="size" id="search-icon">
-                    </form>
-                </div>
-            
-            <a href="#">
-                <div class="Wish-list">
-                    <div class="wishes">
-                        <img src="./images/favorite.png" alt="" class="size wishlistButton">
-                        <span id="wishnum">0</span>
+                
+                    <div class="searchbar">
+                        <form action="#">
+                            <input type="search" placeholder="Enter search here" />
+                            <img src="./images/search.png" alt="" class="size" id="search-icon">
+                        </form>
+                    </div>
+                
+                <a href="#">
+                    <div class="Wish-list">
+                        <div class="wishes">
+                            <img src="./images/favorite.png" alt="" class="size wishlistButton">
+                            <span id="wishnum">0</span>
+                        </div>
+                    </div>
+                </a>
+                
+                
+                <div class="shopping-cart">
+                    <div class="sum-prices">
+                        <img src="./images/shopping_bag.png" alt="" class="size shoppingCartButton">
+                        <span id="cartnum" class="">0
+                        </span>
                     </div>
                 </div>
-            </a>
-            
-            
-            <div class="shopping-cart">
-                <div class="sum-prices">
-                    <img src="./images/shopping_bag.png" alt="" class="size shoppingCartButton">
-                    <span id="cartnum" class="">0
-                    </span>
-                </div>
+                
             </div>
-            
+    
         </div>
-
         <!--the cart section-->
 
         <div class="producstOnCart hide">
@@ -168,7 +170,9 @@
             <!--first row-->
             <div class="featured-row product">
                 <div class="featuredpic"  data-name="p-1">
-                    <img src="./images/1.jpg" alt="">
+                    <div class="fimage">
+                        <img src="./images/1.jpg" alt="">
+                    </div>
                     <div class="feature-text">
                         <div class="ftext">
                         <h4>Original Crocs Leather Skin</h4>
@@ -181,7 +185,9 @@
                     </div>
                 </div>
                 <div class="featuredpic"  data-name="p-2">
-                    <img src="./images/women5.jpg" alt="">
+                    <div class="fimage">
+                        <img src="./images/women5.jpg" alt="">
+                    </div>
                     <div class="feature-text">
                         <div class="ftext">
                         <h4>Black Diamond Studded Heel</h4>
@@ -194,7 +200,9 @@
                     
                 </div>
                 <div class="featuredpic"  data-name="p-3">
-                    <img src="./images/men5.jpg" alt="">
+                    <div class="fimage">
+                        <img src="./images/men5.jpg" alt="">
+                    </div>
                     <div class="feature-text">
                         <div class="ftext">
                         <h4>Shiny Black Leather For Men</h4>
@@ -208,7 +216,9 @@
                 </div>
 
                 <div class="featuredpic"  data-name="p-4">
-                    <img src="./images/women4.jpg" alt="">
+                    <div class="fimage">
+                        <img src="./images/women4.jpg" alt="">
+                    </div>
                     <div class="feature-text">
                         <div class="ftext">
                         <h4>Golden Anklet Heel For Women</h4>
@@ -224,7 +234,9 @@
             <!--second row-->
             <div class="featured-row">
                 <div class="featuredpic"  data-name="p-5">
-                    <img src="./images/women2.jpg" alt="">
+                    <div class="fimage">
+                        <img src="./images/women2.jpg" alt="">
+                    </div>
                     <div class="feature-text">
                     <div class="ftext">
                     <h4>Black Crossed Leather</h4>
@@ -237,7 +249,9 @@
                     </div>
                 </div>
                 <div class="featuredpic"  data-name="p-6">
-                    <img src="./images/menblack1.jpg" alt="">
+                    <div class="fimage">
+                        <img src="./images/menblack1.jpg" alt="">
+                    </div>
                     <div class="feature-text">
                         <div class="ftext">
                         <h4>Mid Night Black Crocs Leather</h4>
@@ -250,7 +264,9 @@
                     </div>
                 </div>
                 <div class="featuredpic"  data-name="p-7">
+                    <div class="fimage">
                     <img src="./images/womenshoe1.png" alt="">
+                    </div>
                     <div class="feature-text">
                         <div class="ftext">
                         <h4>Glossy White and Black Flats</h4>
@@ -263,7 +279,9 @@
                     </div>
                 </div>
                 <div class="featuredpic"  data-name="p-8">
+                    <div class="fimage">
                     <img src="./images/men6.jpg" alt="">
+                    </div>
                     <div class="feature-text">
                         <div class="ftext">
                         <h4>Brown Black Tips Leather Skin</h4>
@@ -323,7 +341,7 @@
                         <p>Made of premium fine leather for classy men</p>
                     </div>
                     
-                    <h6 class="price">$<span class="priceValue">125</span></h6>
+                    <h6 class="price">$<span class="priceValue">125</span>
                     
                     <div class="size">
                         <p>Size</p>
@@ -332,6 +350,7 @@
                         <div class="psize">42</div>
                         <div class="psize">44</div>
                     </div>
+                    </h6>
                     <div class="quantity">
                         <p>Quantity :</p>
                         <input type="number" min="1" max="5" value="1">
@@ -388,12 +407,13 @@
                 
                     <h6 class="price">$<span class="priceValue">85</span>
                     <div class="size">
-                      <p>Size :</p>
+                      <p>Size</p>
                       <div class="psize active">38</div>
                         <div class="psize">40</div>
                         <div class="psize">42</div>
                         <div class="psize">44</div>
                     </div>
+                    </h6>
                     <div class="quantity">
                       <p>Quantity :</p>
                       <input type="number" min="1" max="5" value="1">
@@ -432,7 +452,7 @@
       
               <div class="right">
                   <div class="pname productName item">Shiny Black Leather For Men</div>
-                  <div class="ratings">
+                  <div class="ratings stars">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -443,7 +463,7 @@
                     <p>Made of premium fine leather for classy men</p>
                     </div>
                 
-                    <h6 class="price">$<span class="priceValue">75</span></h6>
+                    <h6 class="price">$<span class="priceValue">75</span>
                   <div class="size">
                       <p>Size :</p>
                       <div class="psize active">38</div>
@@ -451,6 +471,7 @@
                         <div class="psize">42</div>
                         <div class="psize">44</div>
                   </div>
+                  </h6>
                   <div class="quantity">
                       <p>Quantity :</p>
                       <input type="number" min="1" max="5" value="1">
@@ -489,7 +510,7 @@
       
               <div class="right">
                   <div class="pname productName item">Golden Anklet Heel for Women</div>
-                  <div class="ratings sta">
+                  <div class="ratings stars">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -500,7 +521,7 @@
                     <p>Made of premium fine leather for classy women</p>
                     </div>
                 
-                    <h6 class="price">$<span class="priceValue">65</span></h6>
+                    <h6 class="price">$<span class="priceValue">65</span>
                   <div class="size">
                       <p>Size :</p>
                       <div class="psize active">38</div>
@@ -508,6 +529,7 @@
                         <div class="psize">42</div>
                         <div class="psize">44</div>
                   </div>
+                  </h6>
                   <div class="quantity">
                       <p>Quantity :</p>
                       <input type="number" min="1" max="5" value="1">
@@ -559,7 +581,7 @@
                     <p>Made of premium fine leather for classy women</p>
                     </div>
                 
-                    <h6 class="price">$<span class="priceValue">75.50</span></h6>
+                    <h6 class="price">$<span class="priceValue">75.50</span>
                   <div class="size">
                       <p>Size :</p>
                       <div class="psize active">38</div>
@@ -567,6 +589,7 @@
                         <div class="psize">42</div>
                         <div class="psize">44</div>
                   </div>
+                  </h6>
                   <div class="quantity">
                       <p>Quantity :</p>
                       <input type="number" min="1" max="5" value="1">
@@ -617,7 +640,7 @@
                     <p>Made of premium fine leather for classy men</p>
                     </div>
                 
-                    <h6 class="price">$<span class="priceValue">40</span></h6>
+                    <h6 class="price">$<span class="priceValue">40</span>
                   <div class="size">
                       <p>Size :</p>
                       <div class="psize active">38</div>
@@ -625,6 +648,7 @@
                         <div class="psize">42</div>
                         <div class="psize">44</div>
                   </div>
+                  </h6>
                   <div class="quantity">
                       <p>Quantity :</p>
                       <input type="number" min="1" max="5" value="1">
@@ -675,7 +699,7 @@
                     <p>Made of premium fine leather for classy men</p>
                     </div>
                 
-                    <h6 class="price">$<span class="priceValue">40</span></h6>
+                    <h6 class="price">$<span class="priceValue">40</span>
                   <div class="size">
                       <p>Size :</p>
                       <div class="psize active">38</div>
@@ -683,6 +707,7 @@
                         <div class="psize">42</div>
                         <div class="psize">44</div>
                   </div>
+                  </h6>
                   <div class="quantity">
                       <p>Quantity :</p>
                       <input type="number" min="1" max="5" value="1">
@@ -729,14 +754,15 @@
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star-half-alt"></i>
                   </div>
-                  <div class="price">$40</div>
-                  <div class="size">
-                      <p>Size :</p>
-                      <div class="psize active">38</div>
-                        <div class="psize">40</div>
-                        <div class="psize">42</div>
-                        <div class="psize">44</div>
-                  </div>
+                  <h6 class="price">$<span class="priceValue">40</span>
+                    <div class="size">
+                        <p>Size :</p>
+                        <div class="psize active">38</div>
+                          <div class="psize">40</div>
+                          <div class="psize">42</div>
+                          <div class="psize">44</div>
+                    </div>
+                    </h6>
                   <div class="quantity">
                       <p>Quantity :</p>
                       <input type="number" min="1" max="5" value="1">

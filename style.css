@@ -57,6 +57,13 @@ body{
     color: #433D8B;
 }
 
+.navleft{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    margin-left: 4pc;
+}
+
 
 .nav-left{
     display: flex;
@@ -94,8 +101,8 @@ body{
     flex-direction: row;
     padding: 3px 3px;
     margin: 4px 4px;
-    margin-top: 1pc;
-    margin-left: 3pc;
+    margin-top: -0.1pc;
+    margin-left: 6pc;
     
 }
 
@@ -123,7 +130,12 @@ body{
     overflow: hidden;
     
     
-  }
+}
+
+.dropbtn{
+    width: 100%;
+}
+
   
   .dropdown .dropbtn {   
     border: none;
@@ -259,6 +271,11 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.flash{
+    font-size: 22px;
+    margin-left: 40pc;
 }
 
 .feature h2{
@@ -417,7 +434,7 @@ button a{
     background-color: #686D76;
     margin: 0.2pc 0.2pc;
     width: 100%;
-    margin-left: 2pc;
+    margin-left: 0pc;
 }
 
 .newsletter{
@@ -471,7 +488,7 @@ button a{
     height: fit-content;
     width: 100%;
     margin-top: -0.3pc;
-    margin-left: 2pc;
+    margin-left: 0pc;
     
     
 }
@@ -545,13 +562,49 @@ button a{
     
 }
 
-@media  (min-width:738px) and (max-width:1024px)  {
+@media (max-width:1440px){
+    .leftbox{
+        width: 50%;
+    }
+    
+    .leftbox h3{
+        width: 100%;
+    }
+
+    
+    
+    .rightbox{
+        margin-left: -3pc;
+    }
+}
+
+@media  (max-width:1138px)  {
+
+    .mainhead{
+        margin-left: 2.5pc;
+        width: 90%;
+    }
+    .carousel{
+        margin-left: -4pc;
+    }
+    .featured-p{
+        margin-left: 3pc;
+        width: 100%;
+    }
+    .sales{
+        margin-left: 2.5pc;
+    }
+
+}
+
+
+@media  (min-width:768px) and (max-width:1024px)  {
 
     .mainhead{
         display: flex;
         flex-direction: row;
         width: 85%;
-        height: fit-content;
+        height: 15vh;
         margin-top: 1.2pc;
         margin-left: 5pc;
         justify-content: space-around;
@@ -563,13 +616,24 @@ button a{
     } 
 
     .nav-logo{
-        width: 20%;
+        width: 25%;
+    }
+    .nav-logo img{
+        width: 30%;
     }
 
     .nav-left{
         width: 30%;
     }
     .nav-right{width: 35%;}
+
+    .dropbtn{
+        width: 100%;
+    }
+
+    .dropbtn img{
+        margin-top: -1.2pc;
+    }
 
     .carousel{
         width: 97%;
@@ -587,6 +651,10 @@ button a{
         width: 100%;
     }
 
+    .feature h2{
+        margin-left: 28pc;
+    }
+
    .featured-p{
     width: 93%;
     margin-left: 6pc;
@@ -597,6 +665,7 @@ button a{
 
    .sales{
     width: 95%;
+    margin-left: 6pc;
    }
 
    .salesbox h4{
@@ -620,4 +689,473 @@ button a{
     
 }
 
+.leftbox{
+    width: 50%;
 }
+
+.leftbox h3{
+    width: 100%;
+}
+
+
+.rightbox{
+    margin-left: -6pc;
+}
+}
+
+@media  (min-width:554px) and (max-width:768px)  {
+
+    .nav-logo{
+        width: 30%;
+    }
+
+    .navleft{
+        width: 70%;
+        margin-left: -1pc;
+    }
+
+    .nav-right{
+        margin-left: 3pc;
+    }
+
+    .dropbtn{
+        width: 100%;
+    }
+
+
+    .carousel { 
+        position: relative; 
+        width: 85vw; 
+        height: 500px; 
+        overflow: hidden; 
+        background-color: #f8f9fa; 
+    }
+
+    .carousel-item h2{
+        font-size: 28px;
+        margin-left: -4pc;
+    }
+
+    .carousel-item .slide-image { 
+        width: 78%; 
+        height: 500px;
+        
+
+    }
+
+    .feature h2{
+        margin-left: 22pc;
+    }
+
+    .sales{
+        margin-left: 5.5pc;
+    }
+
+    .salesbox1 img{
+        margin-left: 2pc;
+    }
+
+    .salesbox2 img{
+        margin-left: 2pc;
+    }
+
+    .salesbox1 h4 {
+       margin-bottom: 1pc;
+       margin-top: 1pc;
+       width: 80%;
+    }
+
+    button{
+        margin-left: 5pc;
+        margin-top: 1.2px;
+    }
+
+    
+}
+
+@media  (min-width:425px) and (max-width:554px) {
+
+    .mainhead{
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-logo{
+        width: 30%;
+    }
+    .nav-logo img{
+        width: 30%;
+    }
+    .navleft{
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+    }
+
+    .nav-left,.nav-right{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .nav-right{
+        margin-left: 1.5pc;
+    }
+
+    .dropbtn{
+        width: 100%;
+    }
+
+    .carousel{
+        margin-left: -8.5pc;
+        width: 100vw;
+        color: #fff;
+        background-color: transparent;
+    }
+
+    .carousel-item {
+        margin-left: -3.5pc;
+    }
+
+    .featured-p{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 2pc;
+
+    }
+
+    .featured-row{
+        flex-direction: column;
+    }
+
+    .featuredpic{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .feature-text{
+        font-size: 14px;
+        width: 60%;
+    }
+
+    .ftext h4{
+        width: 100%;
+    }
+
+    .feature-like{
+        display: none;
+    }
+
+    .salesbox{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 3pc;
+        margin-bottom: 2pc;
+    }
+
+    .salesbox1{
+        flex-direction: column;
+        width: 80%;
+        margin-left: -3pc;
+        margin-bottom: 2pc;
+    }
+
+    .salesbox1 h4{
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 1pc;
+    }
+
+    .salesbox1 button{
+        margin-top: 0.5pc;
+        margin-left: 6.5pc;
+        
+    }
+
+    .salesbox2 img{
+        margin-left: 1.5pc;
+        margin-top: 0.2pc;
+    }
+
+    .salesbox1 img{
+        margin-left: 1.5pc;
+        margin-top: 0.2pc;
+    }
+    .salesbtn button{
+        height: 3vh;
+    }
+
+    .salesbox2{
+        flex-direction: column;
+        width: 80%;
+        margin-left: -3pc;
+        margin-bottom: 2pc;
+    }
+
+    .salesbox2 button{
+        margin-top: 0.5pc;
+        margin-left: 6.5pc;
+    }
+
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .leftbox{
+        width: 100%;
+        margin-left: -7pc;
+    }
+    .rightbox{
+        width: 100%;
+        margin-left: -9pc;
+    }
+
+    .rightbox h3{
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .rightbox h5{
+
+        font-size: 18px;
+    }
+
+    .rightbox input{
+        width: 80%;
+    }
+
+    .rightbox button{
+        height: 4.5vh;
+        width: 40%;
+        
+    }
+
+    .foot,.news{
+        margin-left: 0pc;
+    }
+
+    .footbox{
+        display: flex;
+        flex-direction: column;
+        margin-left: -2pc;
+        font-size: 14px;
+    }
+
+    
+
+}
+
+@media (max-width:414px) and (min-width:320px){
+
+    .mainhead{
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-logo{
+        width: 30%;
+    }
+    .nav-logo img{
+        width: 30%;
+    }
+    .navleft{
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+    }
+
+    .nav-left,.nav-right{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .nav-right{
+        margin-left: 1.5pc;
+    }
+
+    .dropbtn{
+        width: 100%;
+    }
+
+    .carousel{
+        margin-left: -8.5pc;
+        width: 100vw;
+        color: #fff;
+        background-color: transparent;
+    }
+
+    .carousel-item {
+        margin-left: -3.5pc;
+    }
+
+    .featured-p{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 2pc;
+
+    }
+
+    .featured-row{
+        flex-direction: column;
+    }
+
+    .featuredpic{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .feature-text{
+        font-size: 14px;
+        width: 60%;
+    }
+
+    .ftext h4{
+        width: 100%;
+    }
+
+    .feature-like{
+        display: none;
+    }
+
+    .salesbox{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 3pc;
+        margin-bottom: 2pc;
+    }
+
+    .salesbox1{
+        flex-direction: column;
+        width: 80%;
+        margin-left: -3pc;
+        margin-bottom: 2pc;
+    }
+
+    .salesbox1 h4{
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 1pc;
+    }
+
+    .salesbox1 button{
+        margin-top: 0.5pc;
+        margin-left: 6.5pc;
+        
+    }
+
+    .salesbox2 img{
+        margin-left: 1.5pc;
+        margin-top: 0.2pc;
+    }
+
+    .salesbox1 img{
+        margin-left: 1.5pc;
+        margin-top: 0.2pc;
+    }
+    .salesbtn button{
+        height: 3vh;
+    }
+
+    .salesbox2{
+        flex-direction: column;
+        width: 80%;
+        margin-left: -3pc;
+        margin-bottom: 2pc;
+    }
+
+    .salesbox2 button{
+        margin-top: 0.5pc;
+        margin-left: 6.5pc;
+    }
+
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .leftbox{
+        width: 100%;
+        margin-left: -7pc;
+    }
+    .rightbox{
+        width: 100%;
+        margin-left: -9pc;
+    }
+
+    .rightbox h3{
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .rightbox h5{
+
+        font-size: 18px;
+    }
+
+    .rightbox input{
+        width: 80%;
+    }
+
+    .rightbox button{
+        height: 4.5vh;
+        width: 40%;
+        
+    }
+
+    .foot,.news{
+        margin-left: 0pc;
+    }
+
+    .footbox{
+        display: flex;
+        flex-direction: column;
+        margin-left: -2pc;
+        font-size: 14px;
+    }
+
+
+
+}
+
+@media (max-width:320px){
+
+    .navleft{
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .nav-logo{
+        width: 20%;
+    }
+
+    .nav-left{
+        width: 70%;
+    }
+
+    .salesbox{
+        margin-left: 3pc;
+    }
+
+}
+
+
+
