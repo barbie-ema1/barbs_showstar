@@ -476,13 +476,88 @@ html{
 
  }
 
- @media (max-width:375px) and (min-width:320px){
+ @media (min-width:375px) and (max-width:667px){
 
    .preview{
       width: 85%;
       
    }
 
+   .right {
+      margin-top: -1.5pc;
+   }
+
+   .quantity{
+      margin-top: -2pc;
+   }
+
+   .btn-box{
+      margin-top: -0.5pc;
+   }
+
+   .psize{
+      width: 30px;
+      height: 20px;
+      border: 1px solid #ff5e00;
+      color: #000;
+      text-align: center;
+      margin: 0 5px;
+      cursor: pointer;
+     
+      
+   }
+
+   .price{
+      font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0;
+   }
+   .psize.active{
+      border-width: 1.5px;
+      color: #ff5e00;
+      font-weight: 500;
+   }
+
+   .psize{
+      font-size: 14px;
+   }
+  
+   .psize:hover{
+      color: #fff;
+      background-color: #ff5e00;
+   } 
+
+   .btn-box button{
+      width: 90%;
+   }
+
+ }
+
+ @media (min-width:320px) and (max-width:658px){
+
+   .preview{
+      width: 85%;
+      
+   }
+
+   .right {
+      margin-top: -1.5pc;
+   }
+
+   .quantity{
+      margin-top: -2pc;
+   }
+
+   .btn-box{
+      margin-top: 0.5pc;
+   }
+
+   .btn-box button{
+      margin-top: -1pc;
+      font-size: 14px;
+   }
+
+   
 
    .psize{
       width: 30px;
