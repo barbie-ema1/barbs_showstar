@@ -598,13 +598,15 @@ button a{
 }
 
 
+
+
 @media  (min-width:768px) and (max-width:1024px)  {
 
     .mainhead{
         display: flex;
         flex-direction: row;
         width: 85%;
-        height: 15vh;
+        height: 7vh;
         margin-top: 1.2pc;
         margin-left: 5pc;
         justify-content: space-around;
@@ -631,10 +633,7 @@ button a{
         width: 100%;
     }
 
-    .dropbtn img{
-        margin-top: -1.2pc;
-    }
-
+    
     .carousel{
         width: 97%;
         margin-left: -3pc;
@@ -656,12 +655,26 @@ button a{
     }
 
    .featured-p{
-    width: 93%;
+    width: 90%;
     margin-left: 6pc;
    } 
    .featured-row{
     width: 93%;
+    
    }
+
+   .featuredpic{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+.featuredpic img{
+    height: 20vh;
+}
+
+   
 
    .sales{
     width: 95%;
