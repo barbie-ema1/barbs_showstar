@@ -29,7 +29,7 @@
                 </div>
             </div>
 
-            <div class="menu">
+            <div class="menu is-active">
                 <ul>
                     <li class="active">
                         <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#433D8B"><path d="M264-216h96v-240h240v240h96v-348L480-726 264-564v348Zm-72 72v-456l288-216 288 216v456H528v-240h-96v240H192Zm288-327Z"/></svg>
@@ -65,9 +65,9 @@
             <!--the navigation menu bar -->
             <div class="navbar">
 
-                <div class="nav-left">
+                <div class="nav-left menu-toggle">
                     
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"/></svg>
+                    <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"/></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#433D8B"><path d="M264-216h96v-240h240v240h96v-348L480-726 264-564v348Zm-72 72v-456l288-216 288 216v456H528v-240h-96v240H192Zm288-327Z"/></svg>
                      <h3>My Dashboard</h3>   
                 </div>
@@ -174,7 +174,7 @@
 
                         <h2>VISITORS FOR THE WEEK</h2>
 
-                        <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+                        <canvas id="myChart2"></canvas>
 
                     </div>
 
@@ -360,5 +360,14 @@
 
 
 <script src="dash.js"></script>
+<script>
+    const menu_toggle = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    menu_toggle.addEventListener('click', () => {
+        menu_toggle.classList.toggle('is-active');
+        sidebar.classList.toggle('is-active');
+    });
+</script>
 </body>
 </html>

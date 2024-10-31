@@ -360,6 +360,11 @@ body{
 
 /*styling the donut*/
 
+
+#myChart2{
+  width:100%;
+  max-width:600px}
+
 .dash1-right{
     display: flex;
     flex-direction: column;
@@ -438,6 +443,13 @@ body{
   border-radius: 2pc;
   margin-top: 2pc;
   height: 20vh;
+}
+
+.sales1:hover{
+  transform: scale(.9);
+}
+.sales2:hover{
+  transform: scale(.9);
 }
 
 
@@ -561,3 +573,433 @@ body{
   font-size: 20px;
 
 }
+
+@media  (min-width:820px) and (max-width:1180px)  {
+
+
+  .dash1{
+    margin-left: 2pc;
+  }
+
+  .dash1-left{
+    height: 32vh;
+  }
+  .dash1-right{
+    height: 32vh;
+  }
+
+  .dash1-right{
+    margin-left: 2pc;
+    width: 50%;
+  }
+
+  .sales{
+    margin-left: 2pc;
+  }
+
+  .sales1,.sales2{
+    width: 47%;
+    height: 20vh;
+  }
+
+}
+
+
+@media  (min-width:554px) and (max-width:768px)  {
+
+
+  .navbar{
+    margin-left: 2pc;
+  }
+
+  .dashboard{
+    margin-left: 2pc;
+  }
+
+  
+
+  .dash1{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-around;
+    margin-top: 3pc;
+    
+  }
+
+  .dash1-left h2{
+    margin-left: 7pc;
+  }
+
+  .dash1-left{
+    margin-bottom: 2pc;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .dash1-right h2{
+    margin-left: 9pc;
+  }
+
+  .dash1-right{
+    width: 100%;
+    height: fit-content;
+  }
+
+
+  .dash1-right canvas{
+    margin-top: -0.4pc;
+}
+
+
+.nav-left h3{
+  font-size: 10px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+
+}
+
+.sales1{
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  box-shadow: 5px 5px 5px 5px #d5d5d8 ;
+  border-radius: 2pc;
+  margin-top: 2pc;
+  height: fit-content;
+
+
+}
+
+.sales1:hover{
+  transform: scale(.9);
+}
+
+.salessvg{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 1.2pc;
+  margin-left: 1.2pc;
+}
+
+.salesbox{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.salesbox h2{
+  margin-top: 2pc;
+  margin-bottom: 1pc;
+}
+
+
+
+.sales2{
+  display: flex;
+  flex-direction: row;
+  width: 47%;
+  box-shadow: 5px 5px 5px 5px #d5d5d8 ;
+  border-radius: 2pc;
+  margin-top: 2pc;
+  height: fit-content;
+
+}
+
+.sales2:hover{
+  transform: scale(.9);
+}
+
+.activity{
+  margin-left: 0.5pc;
+  width: 90%;
+}
+
+.act,.notif{
+  width: 48%;
+}
+
+
+
+}
+
+@media  (min-width:360px) and (max-width:740px)  {
+
+.sidebar{
+  display: none;
+}
+
+.nav-left{
+  margin-left: 1.2pc;
+}
+
+.nav-left h3{
+  display: none;
+}
+
+.nav-right{
+  display: flex;
+  width: 35%;
+
+}
+
+.mainbody{
+  width: 100vw;
+}
+
+.dash1{
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  justify-content: space-around;
+  margin-top: 3pc;
+  
+}
+
+.dash1-left{
+  width: 95%;
+  margin-left: 1.4pc;
+  margin-bottom: 3pc;
+}
+
+.dash1-right{
+  width: 95%;
+  margin-left: 1.4pc;
+  margin-bottom: 3pc;
+}
+
+
+.notifications {
+  width: fit-content;
+  display: block;
+  top: 4pc;
+  position: fixed;
+  max-width: 30vh;
+}
+
+.notifications p{
+  width: 90%;
+
+}
+
+.dropdown-content {
+  min-width: 37vw;
+  z-index: 1.5;
+  width: 20%;
+  
+  
+  
+}
+
+.dropdown-content p{
+  font-size: 10px;
+  
+}
+
+.msg{
+  margin-left: -2pc;
+  background-color: #f9f9f9;
+  height: 30vh;
+  top: 4pc;
+  position: fixed;
+  max-width: 35vw;
+}
+
+.notifications p{
+  width: 90%;
+  
+
+}
+
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 6px 8px;
+  font-weight: 400;
+  font-size: 8px;
+  font-style: normal;
+  margin-left: -1pc;
+  background-color: #f9f9f9;
+  
+}
+
+.sales{
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  
+}
+
+.sales1,.sales2{
+  width: 80%;
+  height: 50%;
+}
+
+
+.activity{
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  margin-bottom: 3pc;
+  margin-top: 2pc;
+}
+
+.notif{
+  margin-bottom: 3pc;
+  width: 85%;
+}
+
+.act{
+  width: 85%;
+}
+
+
+
+
+
+
+}
+
+@media  (min-width:320px) and (max-width:658px)  {
+
+  .sidebar{
+    display: none;
+  }
+  
+  .nav-left{
+    margin-left: 1.2pc;
+  }
+  
+  .nav-left h3{
+    display: none;
+  }
+  
+  .nav-right{
+    display: flex;
+    width: 35%;
+  
+  }
+  
+  .mainbody{
+    width: 100vw;
+  }
+  
+  .dash1{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    justify-content: space-around;
+    margin-top: 3pc;
+    
+  }
+  
+  .dash1-left{
+    width: 95%;
+    margin-left: 1.4pc;
+    margin-bottom: 3pc;
+  }
+  
+  .dash1-right{
+    width: 95%;
+    margin-left: 1.4pc;
+    margin-bottom: 3pc;
+  }
+  
+  
+  .notifications {
+    width: fit-content;
+    display: block;
+    top: 4pc;
+    position: fixed;
+    max-width: 30vh;
+  }
+  
+  .notifications p{
+    width: 90%;
+  
+  }
+  
+  .dropdown-content {
+    min-width: 37vw;
+    z-index: 1.5;
+    width: 20%;
+    
+    
+    
+  }
+  
+  .dropdown-content p{
+    font-size: 10px;
+    
+  }
+  
+  .msg{
+    margin-left: -2pc;
+    background-color: #f9f9f9;
+    height: 30vh;
+    top: 4pc;
+    position: fixed;
+    max-width: 35vw;
+  }
+  
+  .notifications p{
+    width: 90%;
+    
+  
+  }
+  
+  
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 6px 8px;
+    font-weight: 400;
+    font-size: 8px;
+    font-style: normal;
+    margin-left: -1pc;
+    background-color: #f9f9f9;
+    
+  }
+  
+  .sales{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    
+  }
+  
+  .sales1,.sales2{
+    width: 80%;
+    height: 50%;
+  }
+  
+  
+  .activity{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    margin-bottom: 3pc;
+    margin-top: 2pc;
+  }
+  
+  .notif{
+    margin-bottom: 3pc;
+    width: 85%;
+  }
+  
+  .act{
+    width: 85%;
+  }
+  
+  
+  
+  
+  
+  
+  }

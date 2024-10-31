@@ -1,0 +1,130 @@
+.userproduct{
+    margin-top: -32pc;
+    width: 85%;
+    margin-left: 11pc;
+}
+
+.userpflash{
+    width:85%;
+    margin-left: 11pc;
+}
+
+.notifications {
+    width: fit-content;
+}
+
+.notifications p{
+    width: 60%;
+
+}
+.msg{
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    width: 80%;
+}
+.msg h3{
+    margin-top: 0.5pc;
+    color: #433D8B;
+    margin-bottom: 1pc;
+    margin-left: 0.5pc;
+}
+
+.msg-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1pc;
+    margin-left: 0.5pc;
+    
+
+}
+
+.msg-col:hover{
+ background-color: #ddd;
+ 
+}
+
+.msg-col p{
+    font-size: 12px;
+    width: 80%;
+    margin-bottom: 1pc;
+    border-bottom: 2px solid #d3d3d6;
+}
+
+
+
+.msg-col svg{
+    width: 20%;
+}
+
+
+
+
+/*styling the dropdown account button*/
+
+.admin-icon{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+
+.dropdownn {
+    float: left;
+    overflow: hidden;
+    
+    
+  }
+  
+  .dropdownn .dropbtnn {   
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 15%;
+    
+  }
+
+  
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+    
+    
+  }
+  .dropdownn:hover .dropbtnn {
+    color: white;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dropdownn:hover .dropdown-content {
+    display: block;
+  }
